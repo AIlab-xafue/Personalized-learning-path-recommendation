@@ -151,6 +151,60 @@ GitHub 网页一次最多接受 **100 个文件**，我们有 119 个，必须�
 2. **断网或卡住**——刷新页面看已提交了几批，GitHub 会保留，接着传剩下的；
 3. **拖完发现文件全平铺在根目录**——说明你拖的是文件夹**里面的文件**而不是文件夹本身，删掉重拖。
 
+### 2.5 不敲命令的备选：GitHub Desktop 图形化推送
+
+比网页上传省事得多，而且能**完整保留本地 5 次提交历史**。适合"不想用命令行、但想留下开发痕迹"的场景。
+
+#### 步骤 1：添加本地仓库
+
+1. 打开 GitHub Desktop，菜单 **File → Add local repository...**（快捷键 `Ctrl+O`）；
+2. **Local path** 点 **Choose...**，定位到 `D:\workbuddy工作空间\github_release\moocube-lpr`；
+3. 点 **Add repository**。
+
+若提示 `This directory does not appear to be a Git repository`，说明路径选错了一层（选到了父目录或子目录），
+退回上一层重新选。
+
+#### 步骤 2：确认识别正确
+
+添加后左侧 **History** 应显示 5 条提交（最新 `f963994`，最早 `864f42f`），
+顶部 Current branch 显示 **main**、Current repository 显示 **moocube-lpr**。三者都对才继续。
+
+#### 步骤 3：发布（最容易出错的一步）
+
+点顶部中间的 **Publish repository**，弹窗里填：
+
+| 字段 | 填什么 |
+|---|---|
+| **Name** | `moocube-lpr` |
+| **Description** | `Knowledge-graph-constrained personalized learning path recommendation` |
+| **Keep this code private** | **必须取消勾选** ← 默认是勾上的，忘了就变私有，老师看不到 |
+| **Owner** | 下拉选组织 **`Allab-xafue`** |
+
+然后点 **Publish repository**。
+
+#### 步骤 4：等推送完成
+
+右下角有进度条，35.43 MB / 119 文件。按 500 KB/s 估算约 1–2 分钟，实际取决于网速。
+完成后顶部按钮从 `Publish repository` 变成 **`Fetch origin`**，即推送结束。
+
+#### 步骤 5：核对
+
+浏览器打开 `https://github.com/Allab-xafue/moocube-lpr`：
+
+- 标题下应有 **Public** 标签（显示 Private 说明步骤 3 漏了取消勾选）；
+- 点 **Commits** 应有 5 条记录，作者为 `SVRchen`；
+- 文件列表为 7 个目录 + 7 个根文件。
+
+#### 常见问题
+
+| 现象 | 原因与处理 |
+|---|---|
+| Owner 下拉里没有 `Allab-xafue` | 组织未授权此客户端。浏览器打开 `https://github.com/organizations/Allab-xafue/settings/oauth_application_policy`，在 GitHub Desktop 那一行点 **Grant**（需组织 Owner 权限） |
+| 报 `repository already exists` | 之前在网页建过同名仓库。要么网页删掉再 Publish，要么走 Repository → Repository settings → Remote 填 `https://github.com/Allab-xafue/moocube-lpr.git` 后点 **Push origin** |
+| 报 `Authentication failed` | 登录过期：**File → Options → Accounts** 重新 Sign in |
+| 推完发现是 Private | 网页 → **Settings** → 拉到最下 **Danger Zone** → **Change visibility** → Public |
+| 提交显示灰色头像、点不开 | 提交邮箱 `1434914103@qq.com` 未在该 GitHub 账号绑定。不影响文件内容，作者名与邮箱仍完整保留在提交里 |
+
 ---
 
 ## 3. 第二步：推送前检查（这步别省）
