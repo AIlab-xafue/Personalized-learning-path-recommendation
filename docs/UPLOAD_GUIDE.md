@@ -98,11 +98,11 @@ ls
 **可行性已核对**：119 个文件 / 35.43 MB，最大单文件 `1_prototype/database/rel_user_video.csv`
 为 9.76 MB，低于网页上传单文件 25 MiB 上限。
 
-> ⚠️ 建仓时 **Owner 必须选组织 `Allab-xafue`**，不要选成个人账号，否则仓库挂在自己名下，老师进组织看不到。
+> ⚠️ 建仓时 **Owner 必须选组织 `AIlab-xafue`**，不要选成个人账号，否则仓库挂在自己名下，老师进组织看不到。
 
 #### 步骤 1：建空仓库
 
-同第 2 章的表格，注意三点：Owner 选 `Allab-xafue`；README / .gitignore / license **三个都留空**；
+同第 2 章的表格，注意三点：Owner 选 `AIlab-xafue`；README / .gitignore / license **三个都留空**；
 点 **Create repository**。
 
 #### 步骤 2：进上传页面
@@ -111,7 +111,7 @@ ls
 也可以直接访问：
 
 ```
-https://github.com/Allab-xafue/moocube-lpr/upload/main
+https://github.com/AIlab-xafue/moocube-lpr/upload/main
 ```
 
 #### 步骤 3：分批拖拽（关键）
@@ -178,7 +178,7 @@ GitHub 网页一次最多接受 **100 个文件**，我们有 119 个，必须�
 | **Name** | `moocube-lpr` |
 | **Description** | `Knowledge-graph-constrained personalized learning path recommendation` |
 | **Keep this code private** | **必须取消勾选** ← 默认是勾上的，忘了就变私有，老师看不到 |
-| **Owner** | 下拉选组织 **`Allab-xafue`** |
+| **Owner** | 下拉选组织 **`AIlab-xafue`** |
 
 然后点 **Publish repository**。
 
@@ -189,7 +189,7 @@ GitHub 网页一次最多接受 **100 个文件**，我们有 119 个，必须�
 
 #### 步骤 5：核对
 
-浏览器打开 `https://github.com/Allab-xafue/moocube-lpr`：
+浏览器打开 `https://github.com/AIlab-xafue/moocube-lpr`：
 
 - 标题下应有 **Public** 标签（显示 Private 说明步骤 3 漏了取消勾选）；
 - 点 **Commits** 能看到完整提交记录，最早一条是 `Initial commit`，作者为 `SVRchen`；
@@ -199,8 +199,8 @@ GitHub 网页一次最多接受 **100 个文件**，我们有 119 个，必须�
 
 | 现象 | 原因与处理 |
 |---|---|
-| Owner 下拉里没有 `Allab-xafue` | 组织未授权此客户端。浏览器打开 `https://github.com/organizations/Allab-xafue/settings/oauth_application_policy`，在 GitHub Desktop 那一行点 **Grant**（需组织 Owner 权限） |
-| 报 `repository already exists` | 之前在网页建过同名仓库。要么网页删掉再 Publish，要么走 Repository → Repository settings → Remote 填 `https://github.com/Allab-xafue/moocube-lpr.git` 后点 **Push origin** |
+| Owner 下拉里没有 `AIlab-xafue` | 组织未授权此客户端。浏览器打开 `https://github.com/organizations/AIlab-xafue/settings/oauth_application_policy`，在 GitHub Desktop 那一行点 **Grant**（需组织 Owner 权限） |
+| 报 `repository already exists` | 之前在网页建过同名仓库。要么网页删掉再 Publish，要么走 Repository → Repository settings → Remote 填 `https://github.com/AIlab-xafue/moocube-lpr.git` 后点 **Push origin** |
 | 报 `Authentication failed` | 登录过期：**File → Options → Accounts** 重新 Sign in |
 | 推完发现是 Private | 网页 → **Settings** → 拉到最下 **Danger Zone** → **Change visibility** → Public |
 | 提交显示灰色头像、点不开 | 提交邮箱 `1434914103@qq.com` 未在该 GitHub 账号绑定。不影响文件内容，作者名与邮箱仍完整保留在提交里 |
