@@ -141,7 +141,7 @@ This stage answers "what happens when the student actually gets stuck or frustra
 | 目录 / Directory | 内容 / Contents |
 |---|---|
 | `dual_state_outputs/` | 7 号脚本输出：主实验、消融、人群、敏感性的逐种子 CSV，统计检验表，汇总 JSON，以及 3 张图 |
-| `dynamic_outputs/` | 8 号脚本输出：`d1_main`（主对比）、`d2_heterogeneity`、`d3_frequency`、`d4_lag_prior`、`d5_budget`、`d6_shock` 及 `meta.json`（记录种子、图规模 410 节点/905 边与全部超参） |
+| `dynamic_outputs/` | 8 号脚本输出：`d1_main`（主对比）、`d2_heterogeneity`、`d3_frequency`、`d4_lag_prior`、`d5_budget`、`d6_shock` 及 `meta.json`（记录种子、图规模 410 节点/905 边与全部超参）；`m1_multiseed` 为 9 号脚本的十种子汇总 |
 | `thesis_outputs/` | 9/11/12 号脚本输出：多种子稳健性汇总、路径来源敏感性表与配对检验 |
 
 ### 3.5 说明文档 / Stage notes

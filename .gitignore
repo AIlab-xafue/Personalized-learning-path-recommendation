@@ -2,9 +2,17 @@
 # 数据与模型：体积远超 GitHub 限制，不随仓库分发
 # Data & models: far beyond GitHub limits, not distributed with this repo
 # 获取方式见 docs/DATA.md
+#
+# 例外：先修关系表只有约 55 KB，随仓库提供，使阶段三无需下载全量数据集
+# Exception: the prerequisite table is ~55 KB and ships with the repo, so
+# Stage 3 runs without downloading the full dataset.
 # ============================================================
-data/MOOCCube/
+data/MOOCCube/*
+!data/MOOCCube/relations/
+data/MOOCCube/relations/*
+!data/MOOCCube/relations/prerequisite-dependency.json
 data/**/*.json
+!data/MOOCCube/relations/prerequisite-dependency.json
 models/
 *.safetensors
 *.bin

@@ -23,6 +23,7 @@ from __future__ import annotations
 import csv
 import json
 import math
+import os
 import random
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -39,7 +40,9 @@ except Exception:  # pragma: no cover - scipy is optional for portability.
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PREREQ_PATH = SCRIPT_DIR.parent / "big" / "MOOCCube" / "relations" / "prerequisite-dependency.json"
+PREREQ_PATH = Path(os.environ.get(
+    "MOOCCUBE_DIR", str(SCRIPT_DIR.parent / "data" / "MOOCCube")
+)) / "relations" / "prerequisite-dependency.json"
 OUTPUT_DIR = SCRIPT_DIR / "dual_state_outputs"
 OUTPUT_DIR.mkdir(exist_ok=True)
 

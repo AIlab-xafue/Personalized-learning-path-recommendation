@@ -34,6 +34,12 @@ import sys
 if os.environ.get("PYTHONHASHSEED") != "0":
     _env = dict(os.environ)
     _env["PYTHONHASHSEED"] = "0"
+    if os.name == "nt":
+        # Windows 没有真正的 exec：os.execve 会让父进程静默退出、输出丢失，
+        # 因此改为启动子进程并等待其结束，再以相同退出码离开。
+        # 注：不要用 os.spawnve，它在 Python 3.13 + Windows 上会 access violation。
+        import subprocess
+        sys.exit(subprocess.call([sys.executable] + sys.argv, env=_env))
     os.execve(sys.executable, [sys.executable] + sys.argv, _env)
 
 import argparse
@@ -49,7 +55,9 @@ from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 import networkx as nx
 
 ROOT = Path(__file__).resolve().parent.parent
-PREREQ = ROOT / "big" / "MOOCCube" / "relations" / "prerequisite-dependency.json"
+PREREQ = Path(os.environ.get(
+    "MOOCCUBE_DIR", str(ROOT / "data" / "MOOCCube")
+)) / "relations" / "prerequisite-dependency.json"
 OUT = Path(__file__).resolve().parent / "dynamic_outputs"
 OUT.mkdir(exist_ok=True)
 

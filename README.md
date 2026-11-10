@@ -151,7 +151,7 @@ python server.py            # 自动打开 http://127.0.0.1:8770
 
 ### 4.2 轻量复现：第 3 阶段实验（CPU，无需 GPU 与数据库）
 
-第 3 阶段的脚本只依赖 `numpy`、`networkx`、`matplotlib`，学习者由模拟器生成，因此**不需要下载数据集、不需要 Neo4j、不需要模型权重**：
+第 3 阶段的脚本只依赖 `numpy`、`networkx`、`matplotlib`，学习者由模拟器生成。它们唯一的外部输入是先修关系表，而这份文件只有 55 KB，**已随仓库提供**（`data/MOOCCube/relations/prerequisite-dependency.json`）。所以**不需要下载 3.9 GB 数据集、不需要 Neo4j、不需要模型权重**：
 
 ```bash
 pip install numpy networkx scipy matplotlib

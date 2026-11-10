@@ -182,8 +182,11 @@ aggregate results, so a fresh clone runs out of the box.
 
 ### 4.2 Lightweight reproduction — Stage 3 (CPU only)
 
-Stage 3 scripts depend only on `numpy`, `networkx` and `matplotlib`. Learners are
-produced by a simulator, so **no dataset, no Neo4j, no model weights** are needed:
+Stage 3 scripts depend only on `numpy`, `networkx` and `matplotlib`, and learners
+are produced by a simulator. Their only external input is the prerequisite
+relation table, a 55 KB file that **ships with this repository**
+(`data/MOOCCube/relations/prerequisite-dependency.json`). So **no 3.9 GB dataset,
+no Neo4j, no model weights** are needed:
 
 ```bash
 pip install numpy networkx scipy matplotlib
