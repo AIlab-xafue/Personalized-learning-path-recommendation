@@ -1,0 +1,17 @@
+{
+  "seed": 20261108,
+  "quick": false,
+  "runtime_sec": 10.7,
+  "graph": {
+    "nodes": 410,
+    "edges": 905
+  },
+  "params": {
+    "gap_penalty": 0.25,
+    "alpha_goal": 0.8,
+    "alpha_rem": 0.36,
+    "dropout": 0.95,
+    "switch": 0.7,
+    "slow_window": 5
+  }
+}

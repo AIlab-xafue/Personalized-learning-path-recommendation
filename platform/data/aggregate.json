@@ -1,0 +1,460 @@
+{
+ "source": "Title2/dynamic_outputs",
+ "blocks": {
+  "d1_main": {
+   "n_paths": 18,
+   "n_learners_per_proto": 30,
+   "problems_sample": {
+    "p1": [
+     "信息交换",
+     "差错检验",
+     "动态分配",
+     "连接点",
+     "缓冲",
+     "路由信息协议",
+     "资源共享"
+    ],
+    "p2": [
+     "最终用户",
+     "即时通信",
+     "冲突避免",
+     "IP地址",
+     "隔离性",
+     "数据传送",
+     "基本服务区"
+    ],
+    "p3": [
+     "网络体系结构",
+     "应用服务器",
+     "物理结构",
+     "子网",
+     "互连网络",
+     "地址解析",
+     "缓存"
+    ]
+   },
+   "overall": {
+    "static": {
+     "n": 2160,
+     "completion": 55.74,
+     "mastery": 79.7,
+     "peak_emotion": 0.6588,
+     "steps": 37.0,
+     "dropout": 7.08,
+     "mismatch_rate": 73.9,
+     "replans": 0.0,
+     "divergence": 0.0
+    },
+    "evolve": {
+     "n": 2160,
+     "completion": 54.58,
+     "mastery": 77.93,
+     "peak_emotion": 0.6494,
+     "steps": 35.46,
+     "dropout": 11.11,
+     "mismatch_rate": 72.51,
+     "replans": 0.0,
+     "divergence": 0.0
+    },
+    "roll": {
+     "n": 2160,
+     "completion": 56.85,
+     "mastery": 80.89,
+     "peak_emotion": 0.6481,
+     "steps": 34.68,
+     "dropout": 10.46,
+     "mismatch_rate": 72.49,
+     "replans": 3.25,
+     "divergence": 0.4573
+    },
+    "roll_nostab": {
+     "n": 2160,
+     "completion": 56.81,
+     "mastery": 80.4,
+     "peak_emotion": 0.6496,
+     "steps": 34.59,
+     "dropout": 11.11,
+     "mismatch_rate": 72.32,
+     "replans": 3.21,
+     "divergence": 0.4587
+    }
+   },
+   "by_prototype": {
+    "勤奋稳健": {
+     "static": {
+      "n": 540,
+      "completion": 66.3,
+      "mastery": 85.53,
+      "peak_emotion": 0.5236,
+      "steps": 35.71,
+      "dropout": 0.0,
+      "mismatch_rate": 68.67,
+      "replans": 0.0,
+      "divergence": 0.0
+     },
+     "evolve": {
+      "n": 540,
+      "completion": 68.33,
+      "mastery": 86.45,
+      "peak_emotion": 0.4927,
+      "steps": 34.39,
+      "dropout": 0.0,
+      "mismatch_rate": 66.38,
+      "replans": 0.0,
+      "divergence": 0.0
+     },
+     "roll": {
+      "n": 540,
+      "completion": 70.56,
+      "mastery": 88.94,
+      "peak_emotion": 0.4891,
+      "steps": 32.75,
+      "dropout": 0.19,
+      "mismatch_rate": 65.5,
+      "replans": 3.29,
+      "divergence": 0.4495
+     },
+     "roll_nostab": {
+      "n": 540,
+      "completion": 74.26,
+      "mastery": 90.16,
+      "peak_emotion": 0.4938,
+      "steps": 32.62,
+      "dropout": 0.0,
+      "mismatch_rate": 65.48,
+      "replans": 3.19,
+      "divergence": 0.4564
+     }
+    },
+    "焦虑敏感": {
+     "static": {
+      "n": 540,
+      "completion": 44.07,
+      "mastery": 72.62,
+      "peak_emotion": 0.784,
+      "steps": 36.89,
+      "dropout": 18.89,
+      "mismatch_rate": 76.75,
+      "replans": 0.0,
+      "divergence": 0.0
+     },
+     "evolve": {
+      "n": 540,
+      "completion": 39.81,
+      "mastery": 67.83,
+      "peak_emotion": 0.8092,
+      "steps": 33.8,
+      "dropout": 31.85,
+      "mismatch_rate": 75.72,
+      "replans": 0.0,
+      "divergence": 0.0
+     },
+     "roll": {
+      "n": 540,
+      "completion": 40.74,
+      "mastery": 69.55,
+      "peak_emotion": 0.8162,
+      "steps": 33.06,
+      "dropout": 30.74,
+      "mismatch_rate": 76.38,
+      "replans": 3.1,
+      "divergence": 0.4579
+     },
+     "roll_nostab": {
+      "n": 540,
+      "completion": 42.22,
+      "mastery": 68.86,
+      "peak_emotion": 0.8114,
+      "steps": 33.34,
+      "dropout": 31.3,
+      "mismatch_rate": 75.77,
+      "replans": 3.09,
+      "divergence": 0.4653
+     }
+    },
+    "探索开放": {
+     "static": {
+      "n": 540,
+      "completion": 61.67,
+      "mastery": 82.43,
+      "peak_emotion": 0.6033,
+      "steps": 37.64,
+      "dropout": 0.56,
+      "mismatch_rate": 73.32,
+      "replans": 0.0,
+      "divergence": 0.0
+     },
+     "evolve": {
+      "n": 540,
+      "completion": 61.3,
+      "mastery": 83.07,
+      "peak_emotion": 0.5444,
+      "steps": 37.1,
+      "dropout": 0.19,
+      "mismatch_rate": 71.9,
+      "replans": 0.0,
+      "divergence": 0.0
+     },
+     "roll": {
+      "n": 540,
+      "completion": 64.44,
+      "mastery": 86.19,
+      "peak_emotion": 0.5426,
+      "steps": 35.84,
+      "dropout": 0.37,
+      "mismatch_rate": 71.4,
+      "replans": 3.41,
+      "divergence": 0.4606
+     },
+     "roll_nostab": {
+      "n": 540,
+      "completion": 63.89,
+      "mastery": 86.24,
+      "peak_emotion": 0.5375,
+      "steps": 35.81,
+      "dropout": 0.19,
+      "mismatch_rate": 72.18,
+      "replans": 3.3,
+      "divergence": 0.4592
+     }
+    },
+    "时间紧迫": {
+     "static": {
+      "n": 540,
+      "completion": 50.93,
+      "mastery": 78.23,
+      "peak_emotion": 0.7243,
+      "steps": 37.75,
+      "dropout": 8.89,
+      "mismatch_rate": 76.88,
+      "replans": 0.0,
+      "divergence": 0.0
+     },
+     "evolve": {
+      "n": 540,
+      "completion": 48.89,
+      "mastery": 74.37,
+      "peak_emotion": 0.7512,
+      "steps": 36.55,
+      "dropout": 12.41,
+      "mismatch_rate": 76.01,
+      "replans": 0.0,
+      "divergence": 0.0
+     },
+     "roll": {
+      "n": 540,
+      "completion": 51.67,
+      "mastery": 78.86,
+      "peak_emotion": 0.7446,
+      "steps": 37.07,
+      "dropout": 10.56,
+      "mismatch_rate": 76.68,
+      "replans": 3.2,
+      "divergence": 0.4613
+     },
+     "roll_nostab": {
+      "n": 540,
+      "completion": 46.85,
+      "mastery": 76.35,
+      "peak_emotion": 0.7557,
+      "steps": 36.59,
+      "dropout": 12.96,
+      "mismatch_rate": 75.85,
+      "replans": 3.25,
+      "divergence": 0.4539
+     }
+    }
+   },
+   "paired": {
+    "roll_vs_static": {
+     "delta_completion": 1.11,
+     "ci95": [
+      -1.02,
+      3.24
+     ],
+     "win_rate": 13.89
+    },
+    "roll_vs_evolve": {
+     "delta_completion": 2.27,
+     "ci95": [
+      0.05,
+      4.4
+     ],
+     "win_rate": 14.54
+    },
+    "roll_vs_roll_nostab": {
+     "delta_completion": 0.05,
+     "ci95": [
+      -2.22,
+      2.13
+     ],
+     "win_rate": 12.82
+    }
+   }
+  },
+  "d2_heterogeneity": {
+   "grid": [
+    {
+     "conscientiousness": 0.2,
+     "neuroticism": 0.2,
+     "static": 70.67,
+     "roll": 74.52,
+     "gain": 3.85
+    },
+    {
+     "conscientiousness": 0.2,
+     "neuroticism": 0.5,
+     "static": 62.98,
+     "roll": 55.29,
+     "gain": -7.69
+    },
+    {
+     "conscientiousness": 0.2,
+     "neuroticism": 0.8,
+     "static": 46.63,
+     "roll": 43.75,
+     "gain": -2.88
+    },
+    {
+     "conscientiousness": 0.5,
+     "neuroticism": 0.2,
+     "static": 72.6,
+     "roll": 74.04,
+     "gain": 1.44
+    },
+    {
+     "conscientiousness": 0.5,
+     "neuroticism": 0.5,
+     "static": 64.42,
+     "roll": 64.9,
+     "gain": 0.48
+    },
+    {
+     "conscientiousness": 0.5,
+     "neuroticism": 0.8,
+     "static": 43.75,
+     "roll": 43.27,
+     "gain": -0.48
+    },
+    {
+     "conscientiousness": 0.8,
+     "neuroticism": 0.2,
+     "static": 77.4,
+     "roll": 75.96,
+     "gain": -1.44
+    },
+    {
+     "conscientiousness": 0.8,
+     "neuroticism": 0.5,
+     "static": 62.98,
+     "roll": 58.65,
+     "gain": -4.33
+    },
+    {
+     "conscientiousness": 0.8,
+     "neuroticism": 0.8,
+     "static": 44.71,
+     "roll": 38.94,
+     "gain": -5.77
+    }
+   ]
+  },
+  "d3_frequency": {
+   "frequency": [
+    {
+     "replan_every": 1,
+     "completion": 61.72,
+     "mean_divergence": 0.4259,
+     "path_changes": 5.28
+    },
+    {
+     "replan_every": 2,
+     "completion": 57.81,
+     "mean_divergence": 0.4284,
+     "path_changes": 5.01
+    },
+    {
+     "replan_every": 3,
+     "completion": 60.16,
+     "mean_divergence": 0.4471,
+     "path_changes": 4.18
+    },
+    {
+     "replan_every": 5,
+     "completion": 59.38,
+     "mean_divergence": 0.4491,
+     "path_changes": 3.34
+    },
+    {
+     "replan_every": 10,
+     "completion": 58.59,
+     "mean_divergence": 0.4457,
+     "path_changes": 3.02
+    }
+   ]
+  },
+  "d5_budget": {
+   "budget": [
+    {
+     "budget": 30,
+     "static": 37.5,
+     "roll": 36.72,
+     "gain": -0.78
+    },
+    {
+     "budget": 40,
+     "static": 55.47,
+     "roll": 58.59,
+     "gain": 3.12
+    },
+    {
+     "budget": 50,
+     "static": 60.94,
+     "roll": 62.5,
+     "gain": 1.56
+    },
+    {
+     "budget": 70,
+     "static": 79.69,
+     "roll": 79.69,
+     "gain": 0.0
+    }
+   ]
+  },
+  "d6_shock": {
+   "shock": [
+    {
+     "shock": "无扰动",
+     "static": 63.28,
+     "roll": 67.19,
+     "gain": 3.91,
+     "static_peak": 0.6626,
+     "roll_peak": 0.6809
+    },
+    {
+     "shock": "情绪冲击",
+     "static": 50.78,
+     "roll": 51.56,
+     "gain": 0.78,
+     "static_peak": 0.8026,
+     "roll_peak": 0.8263
+    },
+    {
+     "shock": "能力跃迁",
+     "static": 85.94,
+     "roll": 82.03,
+     "gain": -3.91,
+     "static_peak": 0.6416,
+     "roll_peak": 0.6688
+    }
+   ]
+  }
+ },
+ "paper1": {
+  "SL": 100.0,
+  "LR": 100.0,
+  "EV": 100.0,
+  "EPR": 97.99,
+  "note": "第一篇论文（河南师范大学学报拟录用）主实验结果"
+ }
+}

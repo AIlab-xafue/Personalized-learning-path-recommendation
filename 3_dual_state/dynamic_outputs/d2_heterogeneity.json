@@ -1,0 +1,67 @@
+{
+  "grid": [
+    {
+      "conscientiousness": 0.2,
+      "neuroticism": 0.2,
+      "static": 70.67,
+      "roll": 74.52,
+      "gain": 3.85
+    },
+    {
+      "conscientiousness": 0.2,
+      "neuroticism": 0.5,
+      "static": 62.98,
+      "roll": 55.29,
+      "gain": -7.69
+    },
+    {
+      "conscientiousness": 0.2,
+      "neuroticism": 0.8,
+      "static": 46.63,
+      "roll": 43.75,
+      "gain": -2.88
+    },
+    {
+      "conscientiousness": 0.5,
+      "neuroticism": 0.2,
+      "static": 72.6,
+      "roll": 74.04,
+      "gain": 1.44
+    },
+    {
+      "conscientiousness": 0.5,
+      "neuroticism": 0.5,
+      "static": 64.42,
+      "roll": 64.9,
+      "gain": 0.48
+    },
+    {
+      "conscientiousness": 0.5,
+      "neuroticism": 0.8,
+      "static": 43.75,
+      "roll": 43.27,
+      "gain": -0.48
+    },
+    {
+      "conscientiousness": 0.8,
+      "neuroticism": 0.2,
+      "static": 77.4,
+      "roll": 75.96,
+      "gain": -1.44
+    },
+    {
+      "conscientiousness": 0.8,
+      "neuroticism": 0.5,
+      "static": 62.98,
+      "roll": 58.65,
+      "gain": -4.33
+    },
+    {
+      "conscientiousness": 0.8,
+      "neuroticism": 0.8,
+      "static": 44.71,
+      "roll": 38.94,
+      "gain": -5.77
+    }
+  ]
+}

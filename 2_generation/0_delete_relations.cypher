@@ -1,0 +1,5 @@
+:auto MATCH ()-[r:KNOWS]-()
+CALL {
+    WITH r
+    DELETE r
+} IN TRANSACTIONS OF 10000 ROWS

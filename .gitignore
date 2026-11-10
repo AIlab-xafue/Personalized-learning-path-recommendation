@@ -1,0 +1,62 @@
+# ============================================================
+# 数据与模型：体积远超 GitHub 限制，不随仓库分发
+# Data & models: far beyond GitHub limits, not distributed with this repo
+# 获取方式见 docs/DATA.md
+# ============================================================
+data/MOOCCube/
+data/**/*.json
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+checkpoint-*/
+
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ============================================================
+# 编辑器与系统文件
+# IDE and OS files
+# ============================================================
+.idea/
+.vscode/
+*.iml
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# 运行产物与日志
+# Runtime outputs and logs
+# ============================================================
+*.log
+runs/
+outputs_tmp/
+*.tmp
+
+# ============================================================
+# 本地敏感配置：数据库口令请用环境变量 NEO4J_PASSWORD
+# Local secrets: put the DB password in NEO4J_PASSWORD
+# ============================================================
+.env
+.env.*
+config.local.py
+secrets.json

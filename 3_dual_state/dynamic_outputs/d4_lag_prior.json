@@ -1,0 +1,40 @@
+{
+  "lag": [
+    {
+      "lag": 0,
+      "completion": 64.84
+    },
+    {
+      "lag": 1,
+      "completion": 61.72
+    },
+    {
+      "lag": 2,
+      "completion": 66.41
+    },
+    {
+      "lag": 3,
+      "completion": 61.72
+    }
+  ],
+  "prior": [
+    {
+      "self_report_shift": -0.1,
+      "static": 24.22,
+      "roll": 27.34,
+      "gain": 3.12
+    },
+    {
+      "self_report_shift": 0.0,
+      "static": 64.84,
+      "roll": 71.09,
+      "gain": 6.25
+    },
+    {
+      "self_report_shift": 0.1,
+      "static": 97.66,
+      "roll": 96.09,
+      "gain": -1.56
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code or the ideas in it, please cite the thesis below."
+title: "Knowledge-Graph-Constrained Personalized Learning Path Recommendation with Dual-State Execution and Rolling Replanning"
+abstract: >-
+  Reference implementation for generating learning paths that are strictly legal
+  on a MOOC knowledge graph (soft prompt constraints plus token-level hard
+  constraints from a prefix tree), repairing paths during execution according to
+  a dual-state learner profile (cognitive readiness and affective load), and
+  replanning across rounds with a stability regulariser. Includes experiment
+  scripts, committed outputs, and an offline demo platform.
+authors:
+  - family-names: "Chen"
+    given-names: "Yu"
+    affiliation: "Xi'an University of Finance and Economics"
+type: software
+license: MIT
+year: 2026
+keywords:
+  - knowledge graph
+  - learning path recommendation
+  - constrained decoding
+  - personalized learning
+  - MOOC
+  - mT5
+references:
+  - type: article
+    title: "MOOCCube: A Large-Scale Data Repository for NLP Applications in MOOCs"
+    authors:
+      - family-names: "Yu"
+        given-names: "Jifan"
+    collection-title: "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics"
+    year: 2020
+    start: 2357
+    end: 2366

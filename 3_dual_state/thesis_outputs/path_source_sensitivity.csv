@@ -1,0 +1,7 @@
+﻿source,strategy,completion,mastery,peak_emotion,steps,dropout,mismatch_rate,replans
+S1_target_set,static,59.31,81.95,0.6482,35.13,7.22,72.02,0.0
+S1_target_set,roll,58.47,81.72,0.6486,34.27,10.56,71.4,3.17
+S2_legal_chain,static,86.25,95.12,0.5887,25.77,2.08,69.85,0.0
+S2_legal_chain,roll,85.0,93.45,0.5615,23.78,6.67,66.55,1.15
+S3_shortest_chain,static,86.25,95.29,0.5667,24.8,5.0,63.24,0.0
+S3_shortest_chain,roll,85.58,94.55,0.5676,23.79,7.02,63.4,1.68

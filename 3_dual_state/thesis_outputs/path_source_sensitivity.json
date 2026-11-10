@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "seed": 20261109,
+    "quick": false,
+    "path_len": 7,
+    "n_tasks": {
+      "S1_target_set": 18,
+      "S2_legal_chain": 3,
+      "S3_shortest_chain": 13
+    },
+    "n_learners_per_proto": 20,
+    "edge_hit_percent": {
+      "S1_target_set": 3.7,
+      "S2_legal_chain": 100.0,
+      "S3_shortest_chain": 100.0
+    },
+    "note": "S1 不要求相邻，S2/S3 沿真实边；三组任务集合不同，仅组内配对。"
+  },
+  "table": {
+    "S1_target_set": {
+      "static": {
+        "n": 1440,
+        "completion": 59.31,
+        "mastery": 81.95,
+        "peak_emotion": 0.6482,
+        "steps": 35.13,
+        "dropout": 7.22,
+        "mismatch_rate": 72.02,
+        "replans": 0.0,
+        "divergence": 0.0
+      },
+      "roll": {
+        "n": 1440,
+        "completion": 58.47,
+        "mastery": 81.72,
+        "peak_emotion": 0.6486,
+        "steps": 34.27,
+        "dropout": 10.56,
+        "mismatch_rate": 71.4,
+        "replans": 3.17,
+        "divergence": 0.4638
+      }
+    },
+    "S2_legal_chain": {
+      "static": {
+        "n": 240,
+        "completion": 86.25,
+        "mastery": 95.12,
+        "peak_emotion": 0.5887,
+        "steps": 25.77,
+        "dropout": 2.08,
+        "mismatch_rate": 69.85,
+        "replans": 0.0,
+        "divergence": 0.0
+      },
+      "roll": {
+        "n": 240,
+        "completion": 85.0,
+        "mastery": 93.45,
+        "peak_emotion": 0.5615,
+        "steps": 23.78,
+        "dropout": 6.67,
+        "mismatch_rate": 66.55,
+        "replans": 1.15,
+        "divergence": 0.1526
+      }
+    },
+    "S3_shortest_chain": {
+      "static": {
+        "n": 1040,
+        "completion": 86.25,
+        "mastery": 95.29,
+        "peak_emotion": 0.5667,
+        "steps": 24.8,
+        "dropout": 5.0,
+        "mismatch_rate": 63.24,
+        "replans": 0.0,
+        "divergence": 0.0
+      },
+      "roll": {
+        "n": 1040,
+        "completion": 85.58,
+        "mastery": 94.55,
+        "peak_emotion": 0.5676,
+        "steps": 23.79,
+        "dropout": 7.02,
+        "mismatch_rate": 63.4,
+        "replans": 1.68,
+        "divergence": 0.2421
+      }
+    }
+  },
+  "paired_static_vs_roll": {
+    "S1_target_set": {
+      "delta_completion": -0.83,
+      "ci95": [
+        -3.47,
+        1.74
+      ],
+      "win_rate": 12.36,
+      "n_pairs": 1440
+    },
+    "S2_legal_chain": {
+      "delta_completion": -1.25,
+      "ci95": [
+        -6.67,
+        4.17
+      ],
+      "win_rate": 9.17,
+      "n_pairs": 240
+    },
+    "S3_shortest_chain": {
+      "delta_completion": -0.67,
+      "ci95": [
+        -3.37,
+        2.02
+      ],
+      "win_rate": 9.62,
+      "n_pairs": 1040
+    }
+  },
+  "length_sensitivity_S2": {
+    "5": {
+      "static": {
+        "n": 1280,
+        "completion": 93.91,
+        "mastery": 97.72,
+        "peak_emotion": 0.505,
+        "steps": 16.43,
+        "dropout": 2.97,
+        "mismatch_rate": 57.81,
+        "replans": 0.0,
+        "divergence": 0.0
+      },
+      "roll": {
+        "n": 1280,
+        "completion": 92.97,
+        "mastery": 97.0,
+        "peak_emotion": 0.5034,
+        "steps": 16.15,
+        "dropout": 4.61,
+        "mismatch_rate": 57.83,
+        "replans": 0.83,
+        "divergence": 0.1295
+      }
+    },
+    "7": {
+      "static": {
+        "n": 160,
+        "completion": 75.62,
+        "mastery": 91.16,
+        "peak_emotion": 0.5917,
+        "steps": 31.7,
+        "dropout": 5.62,
+        "mismatch_rate": 71.14,
+        "replans": 0.0,
+        "divergence": 0.0
+      },
+      "roll": {
+        "n": 160,
+        "completion": 82.5,
+        "mastery": 93.39,
+        "peak_emotion": 0.5993,
+        "steps": 26.89,
+        "dropout": 7.5,
+        "mismatch_rate": 72.26,
+        "replans": 3.03,
+        "divergence": 0.404
+      }
+    }
+  }
+}

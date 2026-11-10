@@ -1,0 +1,259 @@
+{
+  "seeds": [
+    20261108,
+    20261109,
+    20261110,
+    20261111,
+    20261112,
+    20261113
+  ],
+  "per_seed": {
+    "20261108": {
+      "roll_minus_static": {
+        "delta": 1.67,
+        "ci95": [
+          -0.9,
+          4.38
+        ],
+        "win_rate": 13.68
+      },
+      "roll_minus_evolve": {
+        "delta": 3.75,
+        "ci95": [
+          1.18,
+          6.39
+        ],
+        "win_rate": 14.58
+      },
+      "completion": {
+        "static": 56.32,
+        "evolve": 54.24,
+        "roll": 57.99
+      },
+      "mastery": {
+        "static": 79.81,
+        "evolve": 79.08,
+        "roll": 81.26
+      },
+      "dropout": {
+        "static": 6.94,
+        "evolve": 11.32,
+        "roll": 10.9
+      },
+      "steps": {
+        "static": 36.55,
+        "evolve": 35.67,
+        "roll": 34.42
+      }
+    },
+    "20261109": {
+      "roll_minus_static": {
+        "delta": 0.76,
+        "ci95": [
+          -1.81,
+          3.4
+        ],
+        "win_rate": 12.99
+      },
+      "roll_minus_evolve": {
+        "delta": 0.56,
+        "ci95": [
+          -1.88,
+          3.06
+        ],
+        "win_rate": 12.22
+      },
+      "completion": {
+        "static": 61.67,
+        "evolve": 61.88,
+        "roll": 62.43
+      },
+      "mastery": {
+        "static": 85.28,
+        "evolve": 84.83,
+        "roll": 84.21
+      },
+      "dropout": {
+        "static": 6.67,
+        "evolve": 11.39,
+        "roll": 9.51
+      },
+      "steps": {
+        "static": 34.18,
+        "evolve": 33.02,
+        "roll": 33.15
+      }
+    },
+    "20261110": {
+      "roll_minus_static": {
+        "delta": 1.94,
+        "ci95": [
+          -0.56,
+          4.44
+        ],
+        "win_rate": 12.78
+      },
+      "roll_minus_evolve": {
+        "delta": 5.0,
+        "ci95": [
+          2.5,
+          7.57
+        ],
+        "win_rate": 14.38
+      },
+      "completion": {
+        "static": 52.78,
+        "evolve": 49.72,
+        "roll": 54.72
+      },
+      "mastery": {
+        "static": 79.25,
+        "evolve": 76.78,
+        "roll": 78.45
+      },
+      "dropout": {
+        "static": 6.74,
+        "evolve": 10.9,
+        "roll": 12.43
+      },
+      "steps": {
+        "static": 37.55,
+        "evolve": 36.77,
+        "roll": 34.36
+      }
+    },
+    "20261111": {
+      "roll_minus_static": {
+        "delta": 1.18,
+        "ci95": [
+          -1.39,
+          3.68
+        ],
+        "win_rate": 12.43
+      },
+      "roll_minus_evolve": {
+        "delta": 2.22,
+        "ci95": [
+          -0.35,
+          4.72
+        ],
+        "win_rate": 13.33
+      },
+      "completion": {
+        "static": 54.58,
+        "evolve": 53.54,
+        "roll": 55.76
+      },
+      "mastery": {
+        "static": 79.75,
+        "evolve": 78.7,
+        "roll": 80.95
+      },
+      "dropout": {
+        "static": 7.78,
+        "evolve": 11.94,
+        "roll": 11.18
+      },
+      "steps": {
+        "static": 37.08,
+        "evolve": 35.42,
+        "roll": 34.94
+      }
+    },
+    "20261112": {
+      "roll_minus_static": {
+        "delta": 0.49,
+        "ci95": [
+          -2.01,
+          2.99
+        ],
+        "win_rate": 12.36
+      },
+      "roll_minus_evolve": {
+        "delta": 1.04,
+        "ci95": [
+          -1.67,
+          3.61
+        ],
+        "win_rate": 13.06
+      },
+      "completion": {
+        "static": 60.76,
+        "evolve": 60.21,
+        "roll": 61.25
+      },
+      "mastery": {
+        "static": 83.29,
+        "evolve": 82.14,
+        "roll": 83.2
+      },
+      "dropout": {
+        "static": 6.67,
+        "evolve": 11.18,
+        "roll": 10.14
+      },
+      "steps": {
+        "static": 34.41,
+        "evolve": 33.35,
+        "roll": 33.2
+      }
+    },
+    "20261113": {
+      "roll_minus_static": {
+        "delta": 4.93,
+        "ci95": [
+          2.43,
+          7.43
+        ],
+        "win_rate": 14.24
+      },
+      "roll_minus_evolve": {
+        "delta": 4.17,
+        "ci95": [
+          1.6,
+          6.74
+        ],
+        "win_rate": 14.65
+      },
+      "completion": {
+        "static": 54.65,
+        "evolve": 55.42,
+        "roll": 59.58
+      },
+      "mastery": {
+        "static": 81.13,
+        "evolve": 80.18,
+        "roll": 82.35
+      },
+      "dropout": {
+        "static": 8.19,
+        "evolve": 9.58,
+        "roll": 9.44
+      },
+      "steps": {
+        "static": 36.59,
+        "evolve": 35.94,
+        "roll": 33.83
+      }
+    }
+  },
+  "summary": {
+    "n_seeds": 6,
+    "delta_static": {
+      "mean": 1.83,
+      "min": 0.49,
+      "max": 4.93,
+      "n_positive": 6
+    },
+    "delta_evolve": {
+      "mean": 2.79,
+      "min": 0.56,
+      "max": 5.0,
+      "n_positive": 6
+    }
+  },
+  "config": {
+    "n_tasks": 18,
+    "n_learners_per_proto": 20
+  }
+}

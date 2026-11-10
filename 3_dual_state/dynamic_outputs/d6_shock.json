@@ -1,0 +1,28 @@
+{
+  "shock": [
+    {
+      "shock": "无扰动",
+      "static": 63.28,
+      "roll": 67.19,
+      "gain": 3.91,
+      "static_peak": 0.6626,
+      "roll_peak": 0.6809
+    },
+    {
+      "shock": "情绪冲击",
+      "static": 50.78,
+      "roll": 51.56,
+      "gain": 0.78,
+      "static_peak": 0.8026,
+      "roll_peak": 0.8263
+    },
+    {
+      "shock": "能力跃迁",
+      "static": 85.94,
+      "roll": 82.03,
+      "gain": -3.91,
+      "static_peak": 0.6416,
+      "roll_peak": 0.6688
+    }
+  ]
+}

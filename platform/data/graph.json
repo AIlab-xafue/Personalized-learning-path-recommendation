@@ -1,0 +1,8266 @@
+{
+ "meta": {
+  "source": "MOOCCube prerequisite-dependency.json",
+  "scope": "全图（410 个概念）执行路径规划；绘图仅显示任务相关局部子图",
+  "nodes": 410,
+  "edges": 905,
+  "viewNodes": 35,
+  "viewEdges": 65
+ },
+ "nodes": [
+  {
+   "id": "B+树",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "IP地址",
+   "difficulty": 0.8321,
+   "indegree": 9,
+   "outdegree": 14,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "ML语言",
+   "difficulty": 0.4746,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "一元二次方程",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "一元运算",
+   "difficulty": 0.7184,
+   "indegree": 6,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "上传",
+   "difficulty": 0.8356,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "上积",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "下界",
+   "difficulty": 0.7377,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "不可抵赖",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "中序遍历",
+   "difficulty": 0.777,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "中点",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "临界值",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "乘法",
+   "difficulty": 0.7184,
+   "indegree": 5,
+   "outdegree": 11,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "二分搜索",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "二路归并",
+   "difficulty": 0.5106,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "二进制",
+   "difficulty": 0.7214,
+   "indegree": 3,
+   "outdegree": 10,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "二阶偏微分方程",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "互联网",
+   "difficulty": 0.5254,
+   "indegree": 4,
+   "outdegree": 11,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "互连网络",
+   "difficulty": 0.8333,
+   "indegree": 3,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "交换式以太网",
+   "difficulty": 0.8333,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "交换律",
+   "difficulty": 0.7214,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "代入",
+   "difficulty": 0.7214,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "代数",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 31,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "代数和",
+   "difficulty": 0.7184,
+   "indegree": 3,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "代数的",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 16,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "以太网",
+   "difficulty": 0.8321,
+   "indegree": 7,
+   "outdegree": 17,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "任务",
+   "difficulty": 0.4517,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "传输层",
+   "difficulty": 0.8321,
+   "indegree": 8,
+   "outdegree": 8,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "传输速率",
+   "difficulty": 0.838,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "传递函数",
+   "difficulty": 0.7403,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "余数",
+   "difficulty": 0.7214,
+   "indegree": 5,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "信号处理",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "信息交换",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 4,
+   "isStart": true,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "信息分析",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "信标帧",
+   "difficulty": 0.8345,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "信道容量",
+   "difficulty": 0.8345,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "倍式",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "倍数",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "偶数",
+   "difficulty": 0.7243,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "允许发送",
+   "difficulty": 0.8321,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "兄弟",
+   "difficulty": 0.7631,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "充分条件",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "充要条件",
+   "difficulty": 0.4237,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "先进先出",
+   "difficulty": 0.8414,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "入侵防御系统",
+   "difficulty": 0.849,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "入度",
+   "difficulty": 0.4237,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "全图",
+   "difficulty": 0.7589,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "八进制",
+   "difficulty": 0.4237,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "公共因子",
+   "difficulty": 0.7352,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "公开密钥加密",
+   "difficulty": 0.8333,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "公式",
+   "difficulty": 0.7325,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "共线",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "关系代数",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "关联矩阵",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "内存索引",
+   "difficulty": 0.4517,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "内积",
+   "difficulty": 0.3877,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "冲突检测",
+   "difficulty": 0.8333,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "冲突避免",
+   "difficulty": 0.8391,
+   "indegree": 6,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "决策",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "减法",
+   "difficulty": 0.7184,
+   "indegree": 6,
+   "outdegree": 8,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "几何分布",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "出度",
+   "difficulty": 0.7672,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "函数",
+   "difficulty": 0.7184,
+   "indegree": 7,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "分布式计算",
+   "difficulty": 0.8321,
+   "indegree": 5,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "分支",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "分治",
+   "difficulty": 0.7428,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "分点",
+   "difficulty": 0.7377,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "分配律",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "划分",
+   "difficulty": 0.7403,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "列表",
+   "difficulty": 0.7352,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "初始状态",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "加数",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "加法",
+   "difficulty": 0.7184,
+   "indegree": 5,
+   "outdegree": 10,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "动态分配",
+   "difficulty": 0.8333,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": true,
+   "inView": true
+  },
+  {
+   "id": "动态规划",
+   "difficulty": 0.7522,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "区域",
+   "difficulty": 0.7428,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "区间",
+   "difficulty": 0.7325,
+   "indegree": 3,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "协议控制信息",
+   "difficulty": 0.7271,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "协议数据单元",
+   "difficulty": 0.8321,
+   "indegree": 3,
+   "outdegree": 6,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "协议族",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "单向函数",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "单向鉴别",
+   "difficulty": 0.8345,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "单播",
+   "difficulty": 0.8333,
+   "indegree": 3,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "单模光纤",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "单臂路由器",
+   "difficulty": 0.8333,
+   "indegree": 3,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "即时通信",
+   "difficulty": 0.8333,
+   "indegree": 3,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "参数",
+   "difficulty": 0.7184,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "双向通信",
+   "difficulty": 0.8345,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "反例",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "反函数",
+   "difficulty": 0.7214,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "反变",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "叶节点",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "后序遍历",
+   "difficulty": 0.7652,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "后继",
+   "difficulty": 0.7403,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "后进先出",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "向量",
+   "difficulty": 0.7377,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "和校验",
+   "difficulty": 0.8425,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "哈希函数",
+   "difficulty": 0.4939,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "商务智能",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "四叉树",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "图形",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "图的遍历",
+   "difficulty": 0.5254,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "图论",
+   "difficulty": 0.7377,
+   "indegree": 3,
+   "outdegree": 6,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "地址",
+   "difficulty": 0.8321,
+   "indegree": 2,
+   "outdegree": 7,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "地址空间",
+   "difficulty": 0.8321,
+   "indegree": 2,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "地址解析",
+   "difficulty": 0.8356,
+   "indegree": 6,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "坐标轴",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "域名",
+   "difficulty": 0.8321,
+   "indegree": 8,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "基本服务区",
+   "difficulty": 0.8345,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "基本输入输出系统",
+   "difficulty": 0.4517,
+   "indegree": 3,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "基本运算",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 15,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "外模式",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "多项式",
+   "difficulty": 0.7184,
+   "indegree": 6,
+   "outdegree": 6,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "大于",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "大数据",
+   "difficulty": 0.5386,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "失真",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "奇偶性",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "子串",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "子网",
+   "difficulty": 0.8345,
+   "indegree": 9,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "子集",
+   "difficulty": 0.7271,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "字符串",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "存储容量",
+   "difficulty": 0.3877,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "存储空间",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "存取时间",
+   "difficulty": 0.4746,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "孩子",
+   "difficulty": 0.761,
+   "indegree": 2,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "安全关联",
+   "difficulty": 0.8333,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "安装",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "定义",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "实例",
+   "difficulty": 0.4517,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "实根",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "实轴",
+   "difficulty": 0.8356,
+   "indegree": 5,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "容量",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "密码",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "密钥长度",
+   "difficulty": 0.8321,
+   "indegree": 3,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "对偶定理",
+   "difficulty": 0.7214,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "对数正态分布",
+   "difficulty": 0.7243,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "对角线",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "封装",
+   "difficulty": 0.4237,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "射线",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "小于",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "小数点",
+   "difficulty": 0.7184,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "层次遍历",
+   "difficulty": 0.8356,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "属于",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "左值",
+   "difficulty": 0.7271,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "差错控制",
+   "difficulty": 0.8356,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "差错检验",
+   "difficulty": 0.8321,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": true,
+   "inView": true
+  },
+  {
+   "id": "布尔代数",
+   "difficulty": 0.7243,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "常数",
+   "difficulty": 0.7184,
+   "indegree": 3,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "幂集",
+   "difficulty": 0.7271,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "平均查找长度",
+   "difficulty": 0.7567,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "平行线",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "并运算",
+   "difficulty": 0.5106,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "广域网",
+   "difficulty": 0.8402,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "广度优先搜索",
+   "difficulty": 0.8468,
+   "indegree": 11,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "应用",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "应用服务器",
+   "difficulty": 0.5505,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "应用程序",
+   "difficulty": 0.4237,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "度量",
+   "difficulty": 0.7271,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "开区间",
+   "difficulty": 0.7352,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "开放系统互连",
+   "difficulty": 0.8321,
+   "indegree": 5,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "异步传输",
+   "difficulty": 0.8345,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "引理",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "归纳证明",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "当且仅当",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "影响函数",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "循环模",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "循环码",
+   "difficulty": 0.7271,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "微分",
+   "difficulty": 0.7352,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "微分方程",
+   "difficulty": 0.7428,
+   "indegree": 6,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "必要条件",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "快速以太网",
+   "difficulty": 0.8333,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "总体",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "意向锁",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "扩展服务集",
+   "difficulty": 0.8356,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "报文交换",
+   "difficulty": 0.8468,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "抽象数据类型",
+   "difficulty": 0.5106,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "拒绝服务",
+   "difficulty": 0.85,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "拟合",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "指令",
+   "difficulty": 0.4237,
+   "indegree": 2,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "指数",
+   "difficulty": 0.7184,
+   "indegree": 3,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "指数和",
+   "difficulty": 0.7184,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "排列",
+   "difficulty": 0.7271,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "排序",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "排序问题",
+   "difficulty": 0.7352,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "控制变量",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "控制系统",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "插值",
+   "difficulty": 0.7352,
+   "indegree": 6,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "插入排序",
+   "difficulty": 0.5614,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "撤销",
+   "difficulty": 0.5386,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "操作数",
+   "difficulty": 0.8321,
+   "indegree": 3,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "操作系统",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 8,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "数值计算",
+   "difficulty": 0.7403,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数字用户线接入复用器",
+   "difficulty": 0.8333,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数字签名",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "数学",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 34,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据传输",
+   "difficulty": 0.7325,
+   "indegree": 4,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据传送",
+   "difficulty": 0.8321,
+   "indegree": 3,
+   "outdegree": 6,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据加密标准",
+   "difficulty": 0.8321,
+   "indegree": 3,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据对象",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据封装",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据差错",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据库索引",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据流",
+   "difficulty": 0.8321,
+   "indegree": 4,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "数据类型",
+   "difficulty": 0.4237,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据组织",
+   "difficulty": 0.4237,
+   "indegree": 2,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据结构",
+   "difficulty": 0.7325,
+   "indegree": 1,
+   "outdegree": 9,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据网络",
+   "difficulty": 0.8414,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "数据转换",
+   "difficulty": 0.8333,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据通信",
+   "difficulty": 0.8321,
+   "indegree": 4,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数据通道",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数理逻辑",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 6,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数组",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "数量级",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "整数",
+   "difficulty": 0.7184,
+   "indegree": 3,
+   "outdegree": 17,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "整的",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "整除",
+   "difficulty": 0.7325,
+   "indegree": 7,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "方法",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "方程",
+   "difficulty": 0.7243,
+   "indegree": 6,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "方面",
+   "difficulty": 0.7271,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "无偏估计",
+   "difficulty": 0.7243,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "无向图",
+   "difficulty": 0.761,
+   "indegree": 2,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "无穷小",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "无线局域网",
+   "difficulty": 0.8321,
+   "indegree": 4,
+   "outdegree": 14,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "时钟周期",
+   "difficulty": 0.4237,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "时间戳",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "智能农业",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "更新",
+   "difficulty": 0.4517,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "最大传输单元",
+   "difficulty": 0.8333,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "最短路径",
+   "difficulty": 0.8333,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "最终用户",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "有效性",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "有效解",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "有根树",
+   "difficulty": 0.7672,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "服务器",
+   "difficulty": 0.5254,
+   "indegree": 5,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "服务数据单元",
+   "difficulty": 0.8321,
+   "indegree": 5,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "服务集标识符",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "极值",
+   "difficulty": 0.7352,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "极限定理",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "枚举",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "查找",
+   "difficulty": 0.5386,
+   "indegree": 4,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "查询优化",
+   "difficulty": 0.4517,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "查询表达式",
+   "difficulty": 0.5254,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "标准正态分布",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "标识",
+   "difficulty": 0.8321,
+   "indegree": 1,
+   "outdegree": 6,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "标识符",
+   "difficulty": 0.8333,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "栈底",
+   "difficulty": 0.4237,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "栈顶",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "树算法",
+   "difficulty": 0.7352,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "树表示",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "森林",
+   "difficulty": 0.5386,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "概率",
+   "difficulty": 0.7184,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "概率分布",
+   "difficulty": 0.7184,
+   "indegree": 4,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "概率测度",
+   "difficulty": 0.7184,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "正弦",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "正数",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "正整数",
+   "difficulty": 0.7271,
+   "indegree": 4,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "死锁预防",
+   "difficulty": 0.4517,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "比例常数",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "比特",
+   "difficulty": 0.7271,
+   "indegree": 2,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "活动图",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "浮点数",
+   "difficulty": 0.7377,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "消息鉴别码",
+   "difficulty": 0.8321,
+   "indegree": 5,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "深度优先搜索",
+   "difficulty": 0.7403,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "源程序",
+   "difficulty": 0.4939,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "漫游",
+   "difficulty": 0.8368,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "点划分",
+   "difficulty": 0.7298,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "物理结构",
+   "difficulty": 0.8321,
+   "indegree": 1,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "状态",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "状态方程",
+   "difficulty": 0.7184,
+   "indegree": 5,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "用户标识",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "画家算法",
+   "difficulty": 0.3877,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "病态",
+   "difficulty": 0.7403,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "直和",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "直接存取",
+   "difficulty": 0.4746,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "直线",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "相等",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "矩阵表示",
+   "difficulty": 0.7325,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "码元",
+   "difficulty": 0.4517,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "祖先",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "离差",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "离散化",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "积分",
+   "difficulty": 0.7298,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "程序设计",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 7,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "空串",
+   "difficulty": 0.4939,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "空栈",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "立方",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "竞争",
+   "difficulty": 0.7298,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "符号",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "等于",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 8,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "等价类",
+   "difficulty": 0.7243,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "等式",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "算术",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 21,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "算法",
+   "difficulty": 0.7325,
+   "indegree": 6,
+   "outdegree": 8,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "算法分析",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "算法正确性",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "精确解",
+   "difficulty": 0.7298,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "系统实施",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "系统实现",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "系统设计",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "累加器",
+   "difficulty": 0.4746,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "约束",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "约束条件",
+   "difficulty": 0.7298,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "级数求和",
+   "difficulty": 0.8425,
+   "indegree": 7,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "纵坐标",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "线性关系",
+   "difficulty": 0.7271,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "线性回归",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "线性结构",
+   "difficulty": 0.5505,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "线性表",
+   "difficulty": 0.7298,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "线段",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "组合",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "组合逻辑",
+   "difficulty": 0.7298,
+   "indegree": 6,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "结合律",
+   "difficulty": 0.7298,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "结构图",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "绝对值",
+   "difficulty": 0.7243,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "绝对地址",
+   "difficulty": 0.8333,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "维纳过程",
+   "difficulty": 0.7243,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "缓冲",
+   "difficulty": 0.8356,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": true,
+   "inView": true
+  },
+  {
+   "id": "缓存",
+   "difficulty": 0.8333,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "编址",
+   "difficulty": 0.8321,
+   "indegree": 5,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "编码器",
+   "difficulty": 0.7325,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "网上银行",
+   "difficulty": 0.3877,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "网络互联",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 8,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "网络体系结构",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 18,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "网络地址转换",
+   "difficulty": 0.8447,
+   "indegree": 6,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "网络应用",
+   "difficulty": 0.8321,
+   "indegree": 6,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "网络攻击",
+   "difficulty": 0.8468,
+   "indegree": 5,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "网络规模",
+   "difficulty": 0.8333,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "聚合",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "自然对数",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "自环",
+   "difficulty": 0.7652,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "范围查询",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "蕴涵",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "虚拟世界",
+   "difficulty": 0.8333,
+   "indegree": 5,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "行向量",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "行迭代",
+   "difficulty": 0.7214,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "补集",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "被加数",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "计算",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 20,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "计算效率",
+   "difficulty": 0.7325,
+   "indegree": 3,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "计算方法",
+   "difficulty": 0.7243,
+   "indegree": 3,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "计算机",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 37,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "计算机技术",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 27,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "计算机科学",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 22,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "计算科学",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 13,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "访问控制",
+   "difficulty": 0.8321,
+   "indegree": 4,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "访问控制列表",
+   "difficulty": 0.8333,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "访问路径",
+   "difficulty": 0.8345,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "译码",
+   "difficulty": 0.7243,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "译码器",
+   "difficulty": 0.7271,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "语句",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "语法",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "调和级数",
+   "difficulty": 0.7243,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "象限",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "负号",
+   "difficulty": 0.7184,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "负整数",
+   "difficulty": 0.7271,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "资源共享",
+   "difficulty": 0.8447,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": true,
+   "inView": true
+  },
+  {
+   "id": "赋值",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "赋值语句",
+   "difficulty": 0.4746,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "跟踪",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "路由信息协议",
+   "difficulty": 0.8321,
+   "indegree": 6,
+   "outdegree": 4,
+   "isStart": false,
+   "isTarget": true,
+   "inView": true
+  },
+  {
+   "id": "软件",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "软件验证",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "输入向量",
+   "difficulty": 0.7403,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "输入输出",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "输出方程",
+   "difficulty": 0.7243,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "运算",
+   "difficulty": 0.7184,
+   "indegree": 2,
+   "outdegree": 36,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "进程间通信",
+   "difficulty": 0.8356,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "远程访问",
+   "difficulty": 0.8458,
+   "indegree": 5,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "连接点",
+   "difficulty": 0.8391,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": true,
+   "inView": true
+  },
+  {
+   "id": "连续函数",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "连通图",
+   "difficulty": 0.7567,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "连通域",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "连通性",
+   "difficulty": 0.7428,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "迭代",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 7,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "迭代循环",
+   "difficulty": 0.7377,
+   "indegree": 3,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "退出",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "选择排序",
+   "difficulty": 0.5807,
+   "indegree": 6,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "递归函数",
+   "difficulty": 0.7476,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "递归算法",
+   "difficulty": 0.4939,
+   "indegree": 3,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "递归调用",
+   "difficulty": 0.5614,
+   "indegree": 4,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "通项",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "逻辑地址",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "逻辑符号",
+   "difficulty": 0.7214,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "逻辑表达式",
+   "difficulty": 0.7214,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "逻辑运算",
+   "difficulty": 0.7271,
+   "indegree": 9,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "遍历过程",
+   "difficulty": 0.8368,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "邻接矩阵",
+   "difficulty": 0.7522,
+   "indegree": 3,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "邻接表",
+   "difficulty": 0.3877,
+   "indegree": 1,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "邻边",
+   "difficulty": 0.7692,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "部分和",
+   "difficulty": 0.7184,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "配对",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "配置项",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "重构",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "量化",
+   "difficulty": 0.7214,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "鉴别信息",
+   "difficulty": 0.8321,
+   "indegree": 4,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "鉴别数据",
+   "difficulty": 0.8333,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "链式法则",
+   "difficulty": 0.25,
+   "indegree": 0,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "闭区间",
+   "difficulty": 0.8414,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "队列",
+   "difficulty": 0.4237,
+   "indegree": 1,
+   "outdegree": 6,
+   "isStart": false,
+   "isTarget": false,
+   "inView": true
+  },
+  {
+   "id": "队头",
+   "difficulty": 0.7452,
+   "indegree": 2,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "队尾",
+   "difficulty": 0.5106,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "阶乘",
+   "difficulty": 0.7377,
+   "indegree": 9,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "除法",
+   "difficulty": 0.7184,
+   "indegree": 5,
+   "outdegree": 5,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "随机变量",
+   "difficulty": 0.7184,
+   "indegree": 1,
+   "outdegree": 3,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "隔离性",
+   "difficulty": 0.8333,
+   "indegree": 1,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "非对称数字用户线",
+   "difficulty": 0.8321,
+   "indegree": 1,
+   "outdegree": 1,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "非屏蔽双绞线",
+   "difficulty": 0.8345,
+   "indegree": 2,
+   "outdegree": 0,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "非线性结构",
+   "difficulty": 0.8333,
+   "indegree": 2,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "顺序存储",
+   "difficulty": 0.4517,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  },
+  {
+   "id": "顺序查找",
+   "difficulty": 0.3369,
+   "indegree": 1,
+   "outdegree": 2,
+   "isStart": false,
+   "isTarget": false,
+   "inView": false
+  }
+ ],
+ "edges": [
+  {
+   "source": "IP地址",
+   "target": "动态分配",
+   "inView": true
+  },
+  {
+   "source": "IP地址",
+   "target": "单臂路由器",
+   "inView": false
+  },
+  {
+   "source": "IP地址",
+   "target": "即时通信",
+   "inView": false
+  },
+  {
+   "source": "IP地址",
+   "target": "地址解析",
+   "inView": false
+  },
+  {
+   "source": "IP地址",
+   "target": "子网",
+   "inView": true
+  },
+  {
+   "source": "IP地址",
+   "target": "快速以太网",
+   "inView": false
+  },
+  {
+   "source": "IP地址",
+   "target": "无线局域网",
+   "inView": false
+  },
+  {
+   "source": "IP地址",
+   "target": "网络地址转换",
+   "inView": false
+  },
+  {
+   "source": "IP地址",
+   "target": "网络攻击",
+   "inView": false
+  },
+  {
+   "source": "IP地址",
+   "target": "虚拟世界",
+   "inView": false
+  },
+  {
+   "source": "IP地址",
+   "target": "访问控制",
+   "inView": false
+  },
+  {
+   "source": "IP地址",
+   "target": "访问控制列表",
+   "inView": false
+  },
+  {
+   "source": "IP地址",
+   "target": "路由信息协议",
+   "inView": true
+  },
+  {
+   "source": "IP地址",
+   "target": "远程访问",
+   "inView": false
+  },
+  {
+   "source": "ML语言",
+   "target": "递归函数",
+   "inView": false
+  },
+  {
+   "source": "一元二次方程",
+   "target": "精确解",
+   "inView": false
+  },
+  {
+   "source": "一元运算",
+   "target": "减法",
+   "inView": false
+  },
+  {
+   "source": "一元运算",
+   "target": "相等",
+   "inView": false
+  },
+  {
+   "source": "一元运算",
+   "target": "阶乘",
+   "inView": false
+  },
+  {
+   "source": "下界",
+   "target": "数值计算",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "函数",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "反函数",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "数值计算",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "整除",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "有效解",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "浮点数",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "状态方程",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "立方",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "组合",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "逻辑运算",
+   "inView": false
+  },
+  {
+   "source": "乘法",
+   "target": "阶乘",
+   "inView": false
+  },
+  {
+   "source": "二分搜索",
+   "target": "内存索引",
+   "inView": false
+  },
+  {
+   "source": "二分搜索",
+   "target": "数据库索引",
+   "inView": false
+  },
+  {
+   "source": "二进制",
+   "target": "信道容量",
+   "inView": false
+  },
+  {
+   "source": "二进制",
+   "target": "循环码",
+   "inView": false
+  },
+  {
+   "source": "二进制",
+   "target": "数据传输",
+   "inView": false
+  },
+  {
+   "source": "二进制",
+   "target": "数据通信",
+   "inView": false
+  },
+  {
+   "source": "二进制",
+   "target": "比特",
+   "inView": false
+  },
+  {
+   "source": "二进制",
+   "target": "组合逻辑",
+   "inView": false
+  },
+  {
+   "source": "二进制",
+   "target": "编码器",
+   "inView": false
+  },
+  {
+   "source": "二进制",
+   "target": "译码",
+   "inView": false
+  },
+  {
+   "source": "二进制",
+   "target": "译码器",
+   "inView": false
+  },
+  {
+   "source": "二进制",
+   "target": "逻辑运算",
+   "inView": false
+  },
+  {
+   "source": "互联网",
+   "target": "IP地址",
+   "inView": true
+  },
+  {
+   "source": "互联网",
+   "target": "传输层",
+   "inView": true
+  },
+  {
+   "source": "互联网",
+   "target": "动态分配",
+   "inView": true
+  },
+  {
+   "source": "互联网",
+   "target": "协议数据单元",
+   "inView": false
+  },
+  {
+   "source": "互联网",
+   "target": "大数据",
+   "inView": false
+  },
+  {
+   "source": "互联网",
+   "target": "子网",
+   "inView": true
+  },
+  {
+   "source": "互联网",
+   "target": "数据加密标准",
+   "inView": false
+  },
+  {
+   "source": "互联网",
+   "target": "查找",
+   "inView": false
+  },
+  {
+   "source": "互联网",
+   "target": "网络攻击",
+   "inView": false
+  },
+  {
+   "source": "互联网",
+   "target": "访问控制",
+   "inView": false
+  },
+  {
+   "source": "互联网",
+   "target": "远程访问",
+   "inView": false
+  },
+  {
+   "source": "互连网络",
+   "target": "子网",
+   "inView": true
+  },
+  {
+   "source": "互连网络",
+   "target": "异步传输",
+   "inView": false
+  },
+  {
+   "source": "互连网络",
+   "target": "网络攻击",
+   "inView": false
+  },
+  {
+   "source": "互连网络",
+   "target": "连接点",
+   "inView": true
+  },
+  {
+   "source": "交换式以太网",
+   "target": "资源共享",
+   "inView": true
+  },
+  {
+   "source": "代数",
+   "target": "一元运算",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "乘法",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "二进制",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "代数和",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "代数的",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "偶数",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "几何分布",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "函数",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "参数",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "奇偶性",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "实根",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "对偶定理",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "布尔代数",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "排列",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "控制变量",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "插值",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "整数",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "方程",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "极值",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "病态",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "直和",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "离散化",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "组合逻辑",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "蕴涵",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "行迭代",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "计算方法",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "输出方程",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "运算",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "逻辑符号",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "逻辑运算",
+   "inView": false
+  },
+  {
+   "source": "代数",
+   "target": "部分和",
+   "inView": false
+  },
+  {
+   "source": "代数和",
+   "target": "小数点",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "上积",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "下界",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "传递函数",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "小数点",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "左值",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "微分",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "整的",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "方程",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "方面",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "概率",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "正弦",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "级数求和",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "组合逻辑",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "逻辑表达式",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "逻辑运算",
+   "inView": false
+  },
+  {
+   "source": "代数的",
+   "target": "部分和",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "IP地址",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "上传",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "交换式以太网",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "传输层",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "单臂路由器",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "域名",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "基本服务区",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "子网",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "快速以太网",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "扩展服务集",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "无线局域网",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "最短路径",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "漫游",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "网络地址转换",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "网络应用",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "网络规模",
+   "inView": false
+  },
+  {
+   "source": "以太网",
+   "target": "虚拟世界",
+   "inView": false
+  },
+  {
+   "source": "传输层",
+   "target": "IP地址",
+   "inView": true
+  },
+  {
+   "source": "传输层",
+   "target": "冲突避免",
+   "inView": false
+  },
+  {
+   "source": "传输层",
+   "target": "单臂路由器",
+   "inView": false
+  },
+  {
+   "source": "传输层",
+   "target": "差错检验",
+   "inView": true
+  },
+  {
+   "source": "传输层",
+   "target": "异步传输",
+   "inView": false
+  },
+  {
+   "source": "传输层",
+   "target": "数据通信",
+   "inView": false
+  },
+  {
+   "source": "传输层",
+   "target": "编址",
+   "inView": true
+  },
+  {
+   "source": "传输层",
+   "target": "远程访问",
+   "inView": false
+  },
+  {
+   "source": "传递函数",
+   "target": "区域",
+   "inView": false
+  },
+  {
+   "source": "余数",
+   "target": "和校验",
+   "inView": false
+  },
+  {
+   "source": "余数",
+   "target": "整除",
+   "inView": false
+  },
+  {
+   "source": "余数",
+   "target": "等价类",
+   "inView": false
+  },
+  {
+   "source": "余数",
+   "target": "负整数",
+   "inView": false
+  },
+  {
+   "source": "信号处理",
+   "target": "即时通信",
+   "inView": false
+  },
+  {
+   "source": "信号处理",
+   "target": "数据流",
+   "inView": false
+  },
+  {
+   "source": "信号处理",
+   "target": "消息鉴别码",
+   "inView": false
+  },
+  {
+   "source": "信息交换",
+   "target": "IP地址",
+   "inView": true
+  },
+  {
+   "source": "信息交换",
+   "target": "传输层",
+   "inView": true
+  },
+  {
+   "source": "信息交换",
+   "target": "协议控制信息",
+   "inView": true
+  },
+  {
+   "source": "信息交换",
+   "target": "网络应用",
+   "inView": true
+  },
+  {
+   "source": "信息分析",
+   "target": "入侵防御系统",
+   "inView": false
+  },
+  {
+   "source": "信道容量",
+   "target": "传输速率",
+   "inView": false
+  },
+  {
+   "source": "倍数",
+   "target": "倍式",
+   "inView": false
+  },
+  {
+   "source": "倍数",
+   "target": "偶数",
+   "inView": false
+  },
+  {
+   "source": "允许发送",
+   "target": "访问控制",
+   "inView": false
+  },
+  {
+   "source": "允许发送",
+   "target": "进程间通信",
+   "inView": false
+  },
+  {
+   "source": "充分条件",
+   "target": "充要条件",
+   "inView": false
+  },
+  {
+   "source": "充分条件",
+   "target": "当且仅当",
+   "inView": false
+  },
+  {
+   "source": "入侵防御系统",
+   "target": "拒绝服务",
+   "inView": false
+  },
+  {
+   "source": "入度",
+   "target": "图的遍历",
+   "inView": false
+  },
+  {
+   "source": "全图",
+   "target": "无向图",
+   "inView": false
+  },
+  {
+   "source": "公式",
+   "target": "微分方程",
+   "inView": false
+  },
+  {
+   "source": "共线",
+   "target": "线性关系",
+   "inView": false
+  },
+  {
+   "source": "关系代数",
+   "target": "活动图",
+   "inView": false
+  },
+  {
+   "source": "关联矩阵",
+   "target": "传递函数",
+   "inView": false
+  },
+  {
+   "source": "冲突检测",
+   "target": "信标帧",
+   "inView": false
+  },
+  {
+   "source": "决策",
+   "target": "枚举",
+   "inView": false
+  },
+  {
+   "source": "减法",
+   "target": "下界",
+   "inView": false
+  },
+  {
+   "source": "减法",
+   "target": "乘法",
+   "inView": false
+  },
+  {
+   "source": "减法",
+   "target": "区间",
+   "inView": false
+  },
+  {
+   "source": "减法",
+   "target": "多项式",
+   "inView": false
+  },
+  {
+   "source": "减法",
+   "target": "循环模",
+   "inView": false
+  },
+  {
+   "source": "减法",
+   "target": "插值",
+   "inView": false
+  },
+  {
+   "source": "减法",
+   "target": "数值计算",
+   "inView": false
+  },
+  {
+   "source": "减法",
+   "target": "正弦",
+   "inView": false
+  },
+  {
+   "source": "函数",
+   "target": "反函数",
+   "inView": false
+  },
+  {
+   "source": "函数",
+   "target": "影响函数",
+   "inView": false
+  },
+  {
+   "source": "函数",
+   "target": "插值",
+   "inView": false
+  },
+  {
+   "source": "函数",
+   "target": "概率分布",
+   "inView": false
+  },
+  {
+   "source": "函数",
+   "target": "约束条件",
+   "inView": false
+  },
+  {
+   "source": "分布式计算",
+   "target": "域名",
+   "inView": false
+  },
+  {
+   "source": "分支",
+   "target": "树表示",
+   "inView": false
+  },
+  {
+   "source": "初始状态",
+   "target": "画家算法",
+   "inView": false
+  },
+  {
+   "source": "加数",
+   "target": "交换律",
+   "inView": false
+  },
+  {
+   "source": "加数",
+   "target": "代数和",
+   "inView": false
+  },
+  {
+   "source": "加数",
+   "target": "函数",
+   "inView": false
+  },
+  {
+   "source": "加法",
+   "target": "乘法",
+   "inView": false
+  },
+  {
+   "source": "加法",
+   "target": "交换律",
+   "inView": false
+  },
+  {
+   "source": "加法",
+   "target": "关联矩阵",
+   "inView": false
+  },
+  {
+   "source": "加法",
+   "target": "减法",
+   "inView": false
+  },
+  {
+   "source": "加法",
+   "target": "小数点",
+   "inView": false
+  },
+  {
+   "source": "加法",
+   "target": "插值",
+   "inView": false
+  },
+  {
+   "source": "加法",
+   "target": "数值计算",
+   "inView": false
+  },
+  {
+   "source": "加法",
+   "target": "算法",
+   "inView": false
+  },
+  {
+   "source": "加法",
+   "target": "迭代循环",
+   "inView": false
+  },
+  {
+   "source": "加法",
+   "target": "除法",
+   "inView": false
+  },
+  {
+   "source": "区间",
+   "target": "开区间",
+   "inView": false
+  },
+  {
+   "source": "区间",
+   "target": "微分",
+   "inView": false
+  },
+  {
+   "source": "区间",
+   "target": "插值",
+   "inView": false
+  },
+  {
+   "source": "区间",
+   "target": "极值",
+   "inView": false
+  },
+  {
+   "source": "区间",
+   "target": "闭区间",
+   "inView": false
+  },
+  {
+   "source": "协议控制信息",
+   "target": "资源共享",
+   "inView": true
+  },
+  {
+   "source": "协议数据单元",
+   "target": "传输层",
+   "inView": false
+  },
+  {
+   "source": "协议数据单元",
+   "target": "密钥长度",
+   "inView": false
+  },
+  {
+   "source": "协议数据单元",
+   "target": "数据流",
+   "inView": false
+  },
+  {
+   "source": "协议数据单元",
+   "target": "数据通信",
+   "inView": false
+  },
+  {
+   "source": "协议数据单元",
+   "target": "最大传输单元",
+   "inView": false
+  },
+  {
+   "source": "协议数据单元",
+   "target": "标识符",
+   "inView": false
+  },
+  {
+   "source": "协议族",
+   "target": "IP地址",
+   "inView": false
+  },
+  {
+   "source": "协议族",
+   "target": "标识符",
+   "inView": false
+  },
+  {
+   "source": "单向函数",
+   "target": "消息鉴别码",
+   "inView": false
+  },
+  {
+   "source": "单播",
+   "target": "地址解析",
+   "inView": false
+  },
+  {
+   "source": "单臂路由器",
+   "target": "地址解析",
+   "inView": false
+  },
+  {
+   "source": "即时通信",
+   "target": "双向通信",
+   "inView": false
+  },
+  {
+   "source": "即时通信",
+   "target": "基本服务区",
+   "inView": false
+  },
+  {
+   "source": "参数",
+   "target": "微分方程",
+   "inView": false
+  },
+  {
+   "source": "参数",
+   "target": "状态方程",
+   "inView": false
+  },
+  {
+   "source": "双向通信",
+   "target": "和校验",
+   "inView": false
+  },
+  {
+   "source": "反例",
+   "target": "有效性",
+   "inView": false
+  },
+  {
+   "source": "叶节点",
+   "target": "B+树",
+   "inView": false
+  },
+  {
+   "source": "叶节点",
+   "target": "兄弟",
+   "inView": false
+  },
+  {
+   "source": "叶节点",
+   "target": "后序遍历",
+   "inView": false
+  },
+  {
+   "source": "叶节点",
+   "target": "四叉树",
+   "inView": false
+  },
+  {
+   "source": "叶节点",
+   "target": "孩子",
+   "inView": false
+  },
+  {
+   "source": "后进先出",
+   "target": "栈顶",
+   "inView": false
+  },
+  {
+   "source": "向量",
+   "target": "病态",
+   "inView": false
+  },
+  {
+   "source": "向量",
+   "target": "输入向量",
+   "inView": false
+  },
+  {
+   "source": "哈希函数",
+   "target": "查询表达式",
+   "inView": false
+  },
+  {
+   "source": "图形",
+   "target": "连通域",
+   "inView": false
+  },
+  {
+   "source": "图的遍历",
+   "target": "广度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "图的遍历",
+   "target": "连接点",
+   "inView": true
+  },
+  {
+   "source": "图论",
+   "target": "划分",
+   "inView": false
+  },
+  {
+   "source": "图论",
+   "target": "后继",
+   "inView": false
+  },
+  {
+   "source": "图论",
+   "target": "有根树",
+   "inView": false
+  },
+  {
+   "source": "图论",
+   "target": "自环",
+   "inView": false
+  },
+  {
+   "source": "图论",
+   "target": "连通性",
+   "inView": false
+  },
+  {
+   "source": "图论",
+   "target": "邻接矩阵",
+   "inView": false
+  },
+  {
+   "source": "地址",
+   "target": "交换式以太网",
+   "inView": false
+  },
+  {
+   "source": "地址",
+   "target": "以太网",
+   "inView": false
+  },
+  {
+   "source": "地址",
+   "target": "传输层",
+   "inView": false
+  },
+  {
+   "source": "地址",
+   "target": "协议数据单元",
+   "inView": false
+  },
+  {
+   "source": "地址",
+   "target": "地址空间",
+   "inView": false
+  },
+  {
+   "source": "地址",
+   "target": "物理结构",
+   "inView": false
+  },
+  {
+   "source": "地址",
+   "target": "非线性结构",
+   "inView": false
+  },
+  {
+   "source": "地址空间",
+   "target": "操作数",
+   "inView": false
+  },
+  {
+   "source": "地址空间",
+   "target": "标识",
+   "inView": false
+  },
+  {
+   "source": "地址空间",
+   "target": "绝对地址",
+   "inView": false
+  },
+  {
+   "source": "地址空间",
+   "target": "隔离性",
+   "inView": false
+  },
+  {
+   "source": "地址解析",
+   "target": "冲突避免",
+   "inView": false
+  },
+  {
+   "source": "坐标轴",
+   "target": "度量",
+   "inView": false
+  },
+  {
+   "source": "域名",
+   "target": "IP地址",
+   "inView": false
+  },
+  {
+   "source": "域名",
+   "target": "广域网",
+   "inView": false
+  },
+  {
+   "source": "域名",
+   "target": "访问控制列表",
+   "inView": false
+  },
+  {
+   "source": "基本输入输出系统",
+   "target": "服务器",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "乘法",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "交换律",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "代数和",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "分配律",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "加法",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "反函数",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "反变",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "对偶定理",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "布尔代数",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "结合律",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "绝对值",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "译码器",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "赋值",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "逻辑表达式",
+   "inView": false
+  },
+  {
+   "source": "基本运算",
+   "target": "逻辑运算",
+   "inView": false
+  },
+  {
+   "source": "多项式",
+   "target": "幂集",
+   "inView": false
+  },
+  {
+   "source": "多项式",
+   "target": "微分方程",
+   "inView": false
+  },
+  {
+   "source": "多项式",
+   "target": "等于",
+   "inView": false
+  },
+  {
+   "source": "多项式",
+   "target": "等式",
+   "inView": false
+  },
+  {
+   "source": "多项式",
+   "target": "算法",
+   "inView": false
+  },
+  {
+   "source": "多项式",
+   "target": "级数求和",
+   "inView": false
+  },
+  {
+   "source": "大于",
+   "target": "区间",
+   "inView": false
+  },
+  {
+   "source": "大于",
+   "target": "极值",
+   "inView": false
+  },
+  {
+   "source": "大数据",
+   "target": "分布式计算",
+   "inView": false
+  },
+  {
+   "source": "大数据",
+   "target": "快速以太网",
+   "inView": false
+  },
+  {
+   "source": "失真",
+   "target": "差错控制",
+   "inView": false
+  },
+  {
+   "source": "子串",
+   "target": "空串",
+   "inView": false
+  },
+  {
+   "source": "子网",
+   "target": "网络地址转换",
+   "inView": false
+  },
+  {
+   "source": "子集",
+   "target": "点划分",
+   "inView": false
+  },
+  {
+   "source": "字符串",
+   "target": "域名",
+   "inView": false
+  },
+  {
+   "source": "字符串",
+   "target": "空串",
+   "inView": false
+  },
+  {
+   "source": "存储空间",
+   "target": "数据传输",
+   "inView": false
+  },
+  {
+   "source": "孩子",
+   "target": "中序遍历",
+   "inView": false
+  },
+  {
+   "source": "孩子",
+   "target": "兄弟",
+   "inView": false
+  },
+  {
+   "source": "孩子",
+   "target": "出度",
+   "inView": false
+  },
+  {
+   "source": "孩子",
+   "target": "后序遍历",
+   "inView": false
+  },
+  {
+   "source": "定义",
+   "target": "共线",
+   "inView": false
+  },
+  {
+   "source": "定义",
+   "target": "实轴",
+   "inView": false
+  },
+  {
+   "source": "定义",
+   "target": "数理逻辑",
+   "inView": false
+  },
+  {
+   "source": "实例",
+   "target": "ML语言",
+   "inView": false
+  },
+  {
+   "source": "实例",
+   "target": "赋值语句",
+   "inView": false
+  },
+  {
+   "source": "实轴",
+   "target": "级数求和",
+   "inView": false
+  },
+  {
+   "source": "实轴",
+   "target": "遍历过程",
+   "inView": false
+  },
+  {
+   "source": "实轴",
+   "target": "闭区间",
+   "inView": false
+  },
+  {
+   "source": "容量",
+   "target": "存储容量",
+   "inView": false
+  },
+  {
+   "source": "密码",
+   "target": "循环码",
+   "inView": false
+  },
+  {
+   "source": "密码",
+   "target": "译码器",
+   "inView": false
+  },
+  {
+   "source": "密钥长度",
+   "target": "数据加密标准",
+   "inView": false
+  },
+  {
+   "source": "密钥长度",
+   "target": "消息鉴别码",
+   "inView": false
+  },
+  {
+   "source": "小于",
+   "target": "约束条件",
+   "inView": false
+  },
+  {
+   "source": "小数点",
+   "target": "参数",
+   "inView": false
+  },
+  {
+   "source": "层次遍历",
+   "target": "广度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "差错检验",
+   "target": "消息鉴别码",
+   "inView": true
+  },
+  {
+   "source": "常数",
+   "target": "偶数",
+   "inView": false
+  },
+  {
+   "source": "常数",
+   "target": "多项式",
+   "inView": false
+  },
+  {
+   "source": "常数",
+   "target": "数据加密标准",
+   "inView": false
+  },
+  {
+   "source": "常数",
+   "target": "计算效率",
+   "inView": false
+  },
+  {
+   "source": "广域网",
+   "target": "数据网络",
+   "inView": true
+  },
+  {
+   "source": "广域网",
+   "target": "网络地址转换",
+   "inView": false
+  },
+  {
+   "source": "应用",
+   "target": "商务智能",
+   "inView": false
+  },
+  {
+   "source": "度量",
+   "target": "积分",
+   "inView": false
+  },
+  {
+   "source": "开区间",
+   "target": "下界",
+   "inView": false
+  },
+  {
+   "source": "开放系统互连",
+   "target": "传输层",
+   "inView": false
+  },
+  {
+   "source": "开放系统互连",
+   "target": "域名",
+   "inView": false
+  },
+  {
+   "source": "开放系统互连",
+   "target": "数据传送",
+   "inView": false
+  },
+  {
+   "source": "必要条件",
+   "target": "充要条件",
+   "inView": false
+  },
+  {
+   "source": "总体",
+   "target": "子集",
+   "inView": false
+  },
+  {
+   "source": "总体",
+   "target": "补集",
+   "inView": false
+  },
+  {
+   "source": "意向锁",
+   "target": "死锁预防",
+   "inView": false
+  },
+  {
+   "source": "抽象数据类型",
+   "target": "森林",
+   "inView": false
+  },
+  {
+   "source": "抽象数据类型",
+   "target": "线性结构",
+   "inView": false
+  },
+  {
+   "source": "拟合",
+   "target": "公式",
+   "inView": false
+  },
+  {
+   "source": "拟合",
+   "target": "计算",
+   "inView": false
+  },
+  {
+   "source": "指令",
+   "target": "任务",
+   "inView": false
+  },
+  {
+   "source": "指令",
+   "target": "并运算",
+   "inView": false
+  },
+  {
+   "source": "指令",
+   "target": "撤销",
+   "inView": false
+  },
+  {
+   "source": "指数",
+   "target": "影响函数",
+   "inView": false
+  },
+  {
+   "source": "指数",
+   "target": "指数和",
+   "inView": false
+  },
+  {
+   "source": "指数",
+   "target": "级数求和",
+   "inView": false
+  },
+  {
+   "source": "指数和",
+   "target": "多项式",
+   "inView": false
+  },
+  {
+   "source": "排序",
+   "target": "二路归并",
+   "inView": false
+  },
+  {
+   "source": "排序",
+   "target": "插入排序",
+   "inView": false
+  },
+  {
+   "source": "排序",
+   "target": "查询优化",
+   "inView": false
+  },
+  {
+   "source": "排序",
+   "target": "选择排序",
+   "inView": false
+  },
+  {
+   "source": "排序问题",
+   "target": "图论",
+   "inView": false
+  },
+  {
+   "source": "控制系统",
+   "target": "状态方程",
+   "inView": false
+  },
+  {
+   "source": "插值",
+   "target": "分点",
+   "inView": false
+  },
+  {
+   "source": "操作数",
+   "target": "差错检验",
+   "inView": true
+  },
+  {
+   "source": "操作系统",
+   "target": "存取时间",
+   "inView": false
+  },
+  {
+   "source": "操作系统",
+   "target": "应用服务器",
+   "inView": false
+  },
+  {
+   "source": "操作系统",
+   "target": "指令",
+   "inView": false
+  },
+  {
+   "source": "操作系统",
+   "target": "数据组织",
+   "inView": false
+  },
+  {
+   "source": "操作系统",
+   "target": "最大传输单元",
+   "inView": false
+  },
+  {
+   "source": "操作系统",
+   "target": "累加器",
+   "inView": false
+  },
+  {
+   "source": "操作系统",
+   "target": "网上银行",
+   "inView": false
+  },
+  {
+   "source": "操作系统",
+   "target": "路由信息协议",
+   "inView": true
+  },
+  {
+   "source": "数字签名",
+   "target": "单向鉴别",
+   "inView": false
+  },
+  {
+   "source": "数字签名",
+   "target": "路由信息协议",
+   "inView": true
+  },
+  {
+   "source": "数学",
+   "target": "一元运算",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "上传",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "中点",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "二阶偏微分方程",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "偶数",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "充要条件",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "公共因子",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "内积",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "加法",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "反例",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "图论",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "多项式",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "实轴",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "对偶定理",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "常数",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "度量",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "归纳证明",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "排列",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "排序",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "整数",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "正整数",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "比例常数",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "离差",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "级数求和",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "聚合",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "行迭代",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "计算科学",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "负整数",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "运算",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "逻辑表达式",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "配对",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "重构",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "阶乘",
+   "inView": false
+  },
+  {
+   "source": "数学",
+   "target": "除法",
+   "inView": false
+  },
+  {
+   "source": "数据传输",
+   "target": "传输速率",
+   "inView": false
+  },
+  {
+   "source": "数据传输",
+   "target": "和校验",
+   "inView": false
+  },
+  {
+   "source": "数据传送",
+   "target": "以太网",
+   "inView": false
+  },
+  {
+   "source": "数据传送",
+   "target": "允许发送",
+   "inView": false
+  },
+  {
+   "source": "数据传送",
+   "target": "公开密钥加密",
+   "inView": false
+  },
+  {
+   "source": "数据传送",
+   "target": "单向鉴别",
+   "inView": false
+  },
+  {
+   "source": "数据传送",
+   "target": "异步传输",
+   "inView": false
+  },
+  {
+   "source": "数据传送",
+   "target": "服务数据单元",
+   "inView": false
+  },
+  {
+   "source": "数据加密标准",
+   "target": "单向鉴别",
+   "inView": false
+  },
+  {
+   "source": "数据加密标准",
+   "target": "鉴别信息",
+   "inView": false
+  },
+  {
+   "source": "数据对象",
+   "target": "外模式",
+   "inView": false
+  },
+  {
+   "source": "数据封装",
+   "target": "开放系统互连",
+   "inView": false
+  },
+  {
+   "source": "数据封装",
+   "target": "最大传输单元",
+   "inView": false
+  },
+  {
+   "source": "数据封装",
+   "target": "服务器",
+   "inView": false
+  },
+  {
+   "source": "数据封装",
+   "target": "进程间通信",
+   "inView": false
+  },
+  {
+   "source": "数据差错",
+   "target": "冲突避免",
+   "inView": false
+  },
+  {
+   "source": "数据库索引",
+   "target": "查询优化",
+   "inView": false
+  },
+  {
+   "source": "数据流",
+   "target": "地址",
+   "inView": false
+  },
+  {
+   "source": "数据流",
+   "target": "资源共享",
+   "inView": true
+  },
+  {
+   "source": "数据类型",
+   "target": "数据传送",
+   "inView": false
+  },
+  {
+   "source": "数据类型",
+   "target": "码元",
+   "inView": false
+  },
+  {
+   "source": "数据组织",
+   "target": "抽象数据类型",
+   "inView": false
+  },
+  {
+   "source": "数据组织",
+   "target": "线性结构",
+   "inView": false
+  },
+  {
+   "source": "数据组织",
+   "target": "顺序存储",
+   "inView": false
+  },
+  {
+   "source": "数据结构",
+   "target": "传递函数",
+   "inView": false
+  },
+  {
+   "source": "数据结构",
+   "target": "分治",
+   "inView": false
+  },
+  {
+   "source": "数据结构",
+   "target": "列表",
+   "inView": false
+  },
+  {
+   "source": "数据结构",
+   "target": "后继",
+   "inView": false
+  },
+  {
+   "source": "数据结构",
+   "target": "向量",
+   "inView": false
+  },
+  {
+   "source": "数据结构",
+   "target": "无向图",
+   "inView": false
+  },
+  {
+   "source": "数据结构",
+   "target": "深度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "数据结构",
+   "target": "算法",
+   "inView": false
+  },
+  {
+   "source": "数据结构",
+   "target": "邻接矩阵",
+   "inView": false
+  },
+  {
+   "source": "数据网络",
+   "target": "资源共享",
+   "inView": true
+  },
+  {
+   "source": "数据通信",
+   "target": "传输速率",
+   "inView": false
+  },
+  {
+   "source": "数据通信",
+   "target": "双向通信",
+   "inView": false
+  },
+  {
+   "source": "数据通信",
+   "target": "地址",
+   "inView": false
+  },
+  {
+   "source": "数据通信",
+   "target": "差错控制",
+   "inView": false
+  },
+  {
+   "source": "数据通信",
+   "target": "访问路径",
+   "inView": false
+  },
+  {
+   "source": "数据通道",
+   "target": "单模光纤",
+   "inView": false
+  },
+  {
+   "source": "数据通道",
+   "target": "即时通信",
+   "inView": false
+  },
+  {
+   "source": "数据通道",
+   "target": "数据流",
+   "inView": false
+  },
+  {
+   "source": "数理逻辑",
+   "target": "一元运算",
+   "inView": false
+  },
+  {
+   "source": "数理逻辑",
+   "target": "属于",
+   "inView": false
+  },
+  {
+   "source": "数理逻辑",
+   "target": "常数",
+   "inView": false
+  },
+  {
+   "source": "数理逻辑",
+   "target": "引理",
+   "inView": false
+  },
+  {
+   "source": "数理逻辑",
+   "target": "等价类",
+   "inView": false
+  },
+  {
+   "source": "数理逻辑",
+   "target": "迭代",
+   "inView": false
+  },
+  {
+   "source": "数组",
+   "target": "向量",
+   "inView": false
+  },
+  {
+   "source": "数组",
+   "target": "哈希函数",
+   "inView": false
+  },
+  {
+   "source": "数组",
+   "target": "层次遍历",
+   "inView": false
+  },
+  {
+   "source": "数组",
+   "target": "空串",
+   "inView": false
+  },
+  {
+   "source": "数组",
+   "target": "队列",
+   "inView": false
+  },
+  {
+   "source": "数量级",
+   "target": "浮点数",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "余数",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "函数",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "动态规划",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "多项式",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "奇偶性",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "实根",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "密钥长度",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "微分",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "微分方程",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "整除",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "正整数",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "调和级数",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "负号",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "负整数",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "量化",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "阶乘",
+   "inView": false
+  },
+  {
+   "source": "整数",
+   "target": "除法",
+   "inView": false
+  },
+  {
+   "source": "整的",
+   "target": "实轴",
+   "inView": false
+  },
+  {
+   "source": "整的",
+   "target": "微分方程",
+   "inView": false
+  },
+  {
+   "source": "整的",
+   "target": "正整数",
+   "inView": false
+  },
+  {
+   "source": "整除",
+   "target": "公共因子",
+   "inView": false
+  },
+  {
+   "source": "整除",
+   "target": "浮点数",
+   "inView": false
+  },
+  {
+   "source": "整除",
+   "target": "级数求和",
+   "inView": false
+  },
+  {
+   "source": "方法",
+   "target": "内积",
+   "inView": false
+  },
+  {
+   "source": "方法",
+   "target": "广度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "方法",
+   "target": "深度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "方法",
+   "target": "画家算法",
+   "inView": false
+  },
+  {
+   "source": "方法",
+   "target": "选择排序",
+   "inView": false
+  },
+  {
+   "source": "方程",
+   "target": "精确解",
+   "inView": false
+  },
+  {
+   "source": "方程",
+   "target": "约束条件",
+   "inView": false
+  },
+  {
+   "source": "无向图",
+   "target": "有根树",
+   "inView": false
+  },
+  {
+   "source": "无向图",
+   "target": "自环",
+   "inView": false
+  },
+  {
+   "source": "无向图",
+   "target": "邻边",
+   "inView": false
+  },
+  {
+   "source": "无穷小",
+   "target": "极限定理",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "信标帧",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "入侵防御系统",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "冲突检测",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "单向鉴别",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "地址解析",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "子网",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "异步传输",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "拒绝服务",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "数字用户线接入复用器",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "数据传送",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "漫游",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "编址",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "虚拟世界",
+   "inView": false
+  },
+  {
+   "source": "无线局域网",
+   "target": "非对称数字用户线",
+   "inView": false
+  },
+  {
+   "source": "最大传输单元",
+   "target": "信道容量",
+   "inView": false
+  },
+  {
+   "source": "最终用户",
+   "target": "数字签名",
+   "inView": false
+  },
+  {
+   "source": "服务器",
+   "target": "和校验",
+   "inView": false
+  },
+  {
+   "source": "服务器",
+   "target": "应用服务器",
+   "inView": false
+  },
+  {
+   "source": "服务器",
+   "target": "漫游",
+   "inView": false
+  },
+  {
+   "source": "服务器",
+   "target": "网络地址转换",
+   "inView": false
+  },
+  {
+   "source": "服务器",
+   "target": "进程间通信",
+   "inView": false
+  },
+  {
+   "source": "服务数据单元",
+   "target": "传输层",
+   "inView": false
+  },
+  {
+   "source": "服务数据单元",
+   "target": "数据转换",
+   "inView": false
+  },
+  {
+   "source": "服务数据单元",
+   "target": "缓存",
+   "inView": false
+  },
+  {
+   "source": "服务集标识符",
+   "target": "冲突避免",
+   "inView": false
+  },
+  {
+   "source": "服务集标识符",
+   "target": "扩展服务集",
+   "inView": false
+  },
+  {
+   "source": "极限定理",
+   "target": "微分方程",
+   "inView": false
+  },
+  {
+   "source": "枚举",
+   "target": "排列",
+   "inView": false
+  },
+  {
+   "source": "查找",
+   "target": "平均查找长度",
+   "inView": false
+  },
+  {
+   "source": "查找",
+   "target": "插入排序",
+   "inView": false
+  },
+  {
+   "source": "查找",
+   "target": "选择排序",
+   "inView": false
+  },
+  {
+   "source": "标识",
+   "target": "域名",
+   "inView": false
+  },
+  {
+   "source": "标识",
+   "target": "安全关联",
+   "inView": false
+  },
+  {
+   "source": "标识",
+   "target": "实轴",
+   "inView": false
+  },
+  {
+   "source": "标识",
+   "target": "消息鉴别码",
+   "inView": false
+  },
+  {
+   "source": "标识",
+   "target": "访问控制",
+   "inView": false
+  },
+  {
+   "source": "标识",
+   "target": "鉴别数据",
+   "inView": false
+  },
+  {
+   "source": "栈底",
+   "target": "中序遍历",
+   "inView": false
+  },
+  {
+   "source": "栈顶",
+   "target": "空栈",
+   "inView": false
+  },
+  {
+   "source": "概率",
+   "target": "概率分布",
+   "inView": false
+  },
+  {
+   "source": "概率分布",
+   "target": "对数正态分布",
+   "inView": false
+  },
+  {
+   "source": "概率分布",
+   "target": "拟合",
+   "inView": false
+  },
+  {
+   "source": "概率分布",
+   "target": "标准正态分布",
+   "inView": false
+  },
+  {
+   "source": "概率分布",
+   "target": "线性回归",
+   "inView": false
+  },
+  {
+   "source": "概率测度",
+   "target": "概率分布",
+   "inView": false
+  },
+  {
+   "source": "正弦",
+   "target": "实轴",
+   "inView": false
+  },
+  {
+   "source": "正数",
+   "target": "度量",
+   "inView": false
+  },
+  {
+   "source": "正数",
+   "target": "正整数",
+   "inView": false
+  },
+  {
+   "source": "正数",
+   "target": "比特",
+   "inView": false
+  },
+  {
+   "source": "正数",
+   "target": "绝对值",
+   "inView": false
+  },
+  {
+   "source": "正数",
+   "target": "负整数",
+   "inView": false
+  },
+  {
+   "source": "正整数",
+   "target": "整除",
+   "inView": false
+  },
+  {
+   "source": "正整数",
+   "target": "浮点数",
+   "inView": false
+  },
+  {
+   "source": "正整数",
+   "target": "矩阵表示",
+   "inView": false
+  },
+  {
+   "source": "死锁预防",
+   "target": "撤销",
+   "inView": false
+  },
+  {
+   "source": "比特",
+   "target": "传输速率",
+   "inView": false
+  },
+  {
+   "source": "比特",
+   "target": "数据传输",
+   "inView": false
+  },
+  {
+   "source": "比特",
+   "target": "数据通信",
+   "inView": false
+  },
+  {
+   "source": "消息鉴别码",
+   "target": "IP地址",
+   "inView": true
+  },
+  {
+   "source": "物理结构",
+   "target": "以太网",
+   "inView": false
+  },
+  {
+   "source": "物理结构",
+   "target": "先进先出",
+   "inView": false
+  },
+  {
+   "source": "物理结构",
+   "target": "非屏蔽双绞线",
+   "inView": false
+  },
+  {
+   "source": "状态",
+   "target": "输出方程",
+   "inView": false
+  },
+  {
+   "source": "状态",
+   "target": "连通性",
+   "inView": false
+  },
+  {
+   "source": "状态方程",
+   "target": "代数",
+   "inView": false
+  },
+  {
+   "source": "状态方程",
+   "target": "行迭代",
+   "inView": false
+  },
+  {
+   "source": "用户标识",
+   "target": "域名",
+   "inView": false
+  },
+  {
+   "source": "直线",
+   "target": "对角线",
+   "inView": false
+  },
+  {
+   "source": "直线",
+   "target": "射线",
+   "inView": false
+  },
+  {
+   "source": "直线",
+   "target": "平行线",
+   "inView": false
+  },
+  {
+   "source": "直线",
+   "target": "线性关系",
+   "inView": false
+  },
+  {
+   "source": "直线",
+   "target": "线段",
+   "inView": false
+  },
+  {
+   "source": "相等",
+   "target": "大于",
+   "inView": false
+  },
+  {
+   "source": "相等",
+   "target": "操作数",
+   "inView": false
+  },
+  {
+   "source": "相等",
+   "target": "算术",
+   "inView": false
+  },
+  {
+   "source": "矩阵表示",
+   "target": "连通图",
+   "inView": false
+  },
+  {
+   "source": "矩阵表示",
+   "target": "邻接矩阵",
+   "inView": false
+  },
+  {
+   "source": "祖先",
+   "target": "中序遍历",
+   "inView": false
+  },
+  {
+   "source": "祖先",
+   "target": "森林",
+   "inView": false
+  },
+  {
+   "source": "离差",
+   "target": "和校验",
+   "inView": false
+  },
+  {
+   "source": "离差",
+   "target": "差错控制",
+   "inView": false
+  },
+  {
+   "source": "程序设计",
+   "target": "信号处理",
+   "inView": false
+  },
+  {
+   "source": "程序设计",
+   "target": "地址解析",
+   "inView": false
+  },
+  {
+   "source": "程序设计",
+   "target": "指令",
+   "inView": false
+  },
+  {
+   "source": "程序设计",
+   "target": "数组",
+   "inView": false
+  },
+  {
+   "source": "程序设计",
+   "target": "线性结构",
+   "inView": false
+  },
+  {
+   "source": "程序设计",
+   "target": "计算效率",
+   "inView": false
+  },
+  {
+   "source": "程序设计",
+   "target": "递归算法",
+   "inView": false
+  },
+  {
+   "source": "立方",
+   "target": "指数",
+   "inView": false
+  },
+  {
+   "source": "符号",
+   "target": "绝对值",
+   "inView": false
+  },
+  {
+   "source": "符号",
+   "target": "负号",
+   "inView": false
+  },
+  {
+   "source": "符号",
+   "target": "逻辑符号",
+   "inView": false
+  },
+  {
+   "source": "符号",
+   "target": "逻辑运算",
+   "inView": false
+  },
+  {
+   "source": "等于",
+   "target": "代入",
+   "inView": false
+  },
+  {
+   "source": "等于",
+   "target": "减法",
+   "inView": false
+  },
+  {
+   "source": "等于",
+   "target": "加法",
+   "inView": false
+  },
+  {
+   "source": "等于",
+   "target": "差错控制",
+   "inView": false
+  },
+  {
+   "source": "等于",
+   "target": "开区间",
+   "inView": false
+  },
+  {
+   "source": "等于",
+   "target": "方程",
+   "inView": false
+  },
+  {
+   "source": "等于",
+   "target": "语句",
+   "inView": false
+  },
+  {
+   "source": "等于",
+   "target": "阶乘",
+   "inView": false
+  },
+  {
+   "source": "等式",
+   "target": "公式",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "一元运算",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "临界值",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "乘法",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "二进制",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "余数",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "减法",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "函数",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "加数",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "加法",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "基本运算",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "小数点",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "度量",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "插值",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "整除",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "正数",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "算法",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "线性关系",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "绝对值",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "被加数",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "逻辑运算",
+   "inView": false
+  },
+  {
+   "source": "算术",
+   "target": "除法",
+   "inView": false
+  },
+  {
+   "source": "算法",
+   "target": "平均查找长度",
+   "inView": false
+  },
+  {
+   "source": "算法",
+   "target": "排序问题",
+   "inView": false
+  },
+  {
+   "source": "算法",
+   "target": "有根树",
+   "inView": false
+  },
+  {
+   "source": "算法",
+   "target": "树算法",
+   "inView": false
+  },
+  {
+   "source": "算法",
+   "target": "计算效率",
+   "inView": false
+  },
+  {
+   "source": "算法",
+   "target": "迭代循环",
+   "inView": false
+  },
+  {
+   "source": "算法",
+   "target": "递归函数",
+   "inView": false
+  },
+  {
+   "source": "算法",
+   "target": "阶乘",
+   "inView": false
+  },
+  {
+   "source": "算法分析",
+   "target": "二路归并",
+   "inView": false
+  },
+  {
+   "source": "算法分析",
+   "target": "分治",
+   "inView": false
+  },
+  {
+   "source": "算法分析",
+   "target": "抽象数据类型",
+   "inView": false
+  },
+  {
+   "source": "算法分析",
+   "target": "选择排序",
+   "inView": false
+  },
+  {
+   "source": "算法正确性",
+   "target": "广度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "算法正确性",
+   "target": "递归调用",
+   "inView": false
+  },
+  {
+   "source": "系统实施",
+   "target": "编址",
+   "inView": false
+  },
+  {
+   "source": "系统实现",
+   "target": "扩展服务集",
+   "inView": false
+  },
+  {
+   "source": "系统实现",
+   "target": "缓冲",
+   "inView": true
+  },
+  {
+   "source": "系统设计",
+   "target": "存储容量",
+   "inView": false
+  },
+  {
+   "source": "约束",
+   "target": "方程",
+   "inView": false
+  },
+  {
+   "source": "约束",
+   "target": "约束条件",
+   "inView": false
+  },
+  {
+   "source": "纵坐标",
+   "target": "象限",
+   "inView": false
+  },
+  {
+   "source": "线性关系",
+   "target": "线性表",
+   "inView": false
+  },
+  {
+   "source": "线性回归",
+   "target": "无偏估计",
+   "inView": false
+  },
+  {
+   "source": "线性表",
+   "target": "先进先出",
+   "inView": false
+  },
+  {
+   "source": "组合",
+   "target": "组合逻辑",
+   "inView": false
+  },
+  {
+   "source": "组合逻辑",
+   "target": "编码器",
+   "inView": false
+  },
+  {
+   "source": "结构图",
+   "target": "广度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "结构图",
+   "target": "线性结构",
+   "inView": false
+  },
+  {
+   "source": "结构图",
+   "target": "连接点",
+   "inView": true
+  },
+  {
+   "source": "结构图",
+   "target": "非屏蔽双绞线",
+   "inView": false
+  },
+  {
+   "source": "缓存",
+   "target": "缓冲",
+   "inView": true
+  },
+  {
+   "source": "编址",
+   "target": "互连网络",
+   "inView": true
+  },
+  {
+   "source": "编址",
+   "target": "以太网",
+   "inView": false
+  },
+  {
+   "source": "编址",
+   "target": "开放系统互连",
+   "inView": false
+  },
+  {
+   "source": "编址",
+   "target": "访问控制列表",
+   "inView": false
+  },
+  {
+   "source": "网络互联",
+   "target": "上传",
+   "inView": false
+  },
+  {
+   "source": "网络互联",
+   "target": "以太网",
+   "inView": false
+  },
+  {
+   "source": "网络互联",
+   "target": "单播",
+   "inView": true
+  },
+  {
+   "source": "网络互联",
+   "target": "子网",
+   "inView": true
+  },
+  {
+   "source": "网络互联",
+   "target": "服务器",
+   "inView": false
+  },
+  {
+   "source": "网络互联",
+   "target": "服务数据单元",
+   "inView": false
+  },
+  {
+   "source": "网络互联",
+   "target": "虚拟世界",
+   "inView": false
+  },
+  {
+   "source": "网络互联",
+   "target": "连接点",
+   "inView": true
+  },
+  {
+   "source": "网络体系结构",
+   "target": "互联网",
+   "inView": true
+  },
+  {
+   "source": "网络体系结构",
+   "target": "互连网络",
+   "inView": true
+  },
+  {
+   "source": "网络体系结构",
+   "target": "动态分配",
+   "inView": true
+  },
+  {
+   "source": "网络体系结构",
+   "target": "协议控制信息",
+   "inView": true
+  },
+  {
+   "source": "网络体系结构",
+   "target": "协议数据单元",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "协议族",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "子网",
+   "inView": true
+  },
+  {
+   "source": "网络体系结构",
+   "target": "开放系统互连",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "拒绝服务",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "数据封装",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "时间戳",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "最大传输单元",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "服务器",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "服务数据单元",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "查找",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "网络应用",
+   "inView": true
+  },
+  {
+   "source": "网络体系结构",
+   "target": "虚拟世界",
+   "inView": false
+  },
+  {
+   "source": "网络体系结构",
+   "target": "逻辑地址",
+   "inView": false
+  },
+  {
+   "source": "网络地址转换",
+   "target": "网络攻击",
+   "inView": false
+  },
+  {
+   "source": "网络地址转换",
+   "target": "远程访问",
+   "inView": false
+  },
+  {
+   "source": "网络应用",
+   "target": "入侵防御系统",
+   "inView": false
+  },
+  {
+   "source": "网络应用",
+   "target": "分布式计算",
+   "inView": false
+  },
+  {
+   "source": "网络应用",
+   "target": "无线局域网",
+   "inView": false
+  },
+  {
+   "source": "网络攻击",
+   "target": "入侵防御系统",
+   "inView": false
+  },
+  {
+   "source": "自然对数",
+   "target": "对数正态分布",
+   "inView": false
+  },
+  {
+   "source": "范围查询",
+   "target": "查询表达式",
+   "inView": false
+  },
+  {
+   "source": "蕴涵",
+   "target": "子集",
+   "inView": false
+  },
+  {
+   "source": "行向量",
+   "target": "矩阵表示",
+   "inView": false
+  },
+  {
+   "source": "被加数",
+   "target": "组合逻辑",
+   "inView": false
+  },
+  {
+   "source": "被加数",
+   "target": "编码器",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "下界",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "代入",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "余数",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "关联矩阵",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "冲突检测",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "减法",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "动态规划",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "密码",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "差错控制",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "循环模",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "指数",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "数据传输",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "数据流",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "整数",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "整除",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "方程",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "线性关系",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "部分和",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "阶乘",
+   "inView": false
+  },
+  {
+   "source": "计算",
+   "target": "除法",
+   "inView": false
+  },
+  {
+   "source": "计算效率",
+   "target": "数据结构",
+   "inView": false
+  },
+  {
+   "source": "计算方法",
+   "target": "中序遍历",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "IP地址",
+   "inView": true
+  },
+  {
+   "source": "计算机",
+   "target": "互联网",
+   "inView": true
+  },
+  {
+   "source": "计算机",
+   "target": "互连网络",
+   "inView": true
+  },
+  {
+   "source": "计算机",
+   "target": "以太网",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "八进制",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "内存索引",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "哈希函数",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "地址空间",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "域名",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "子网",
+   "inView": true
+  },
+  {
+   "source": "计算机",
+   "target": "实例",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "封装",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "幂集",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "并运算",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "广度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "快速以太网",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "数据类型",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "数据转换",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "方面",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "时钟周期",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "更新",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "有根树",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "服务数据单元",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "查找",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "查询表达式",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "标识符",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "栈底",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "死锁预防",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "累加器",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "缓冲",
+   "inView": true
+  },
+  {
+   "source": "计算机",
+   "target": "网络应用",
+   "inView": true
+  },
+  {
+   "source": "计算机",
+   "target": "路由信息协议",
+   "inView": true
+  },
+  {
+   "source": "计算机",
+   "target": "远程访问",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "选择排序",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "鉴别信息",
+   "inView": true
+  },
+  {
+   "source": "计算机",
+   "target": "队尾",
+   "inView": false
+  },
+  {
+   "source": "计算机",
+   "target": "非线性结构",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "上传",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "互联网",
+   "inView": true
+  },
+  {
+   "source": "计算机技术",
+   "target": "分布式计算",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "协议控制信息",
+   "inView": true
+  },
+  {
+   "source": "计算机技术",
+   "target": "地址解析",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "域名",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "基本输入输出系统",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "大数据",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "安装",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "应用程序",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "开放系统互连",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "异步传输",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "操作系统",
+   "inView": true
+  },
+  {
+   "source": "计算机技术",
+   "target": "数据网络",
+   "inView": true
+  },
+  {
+   "source": "计算机技术",
+   "target": "无线局域网",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "智能农业",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "服务数据单元",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "漫游",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "程序设计",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "系统实现",
+   "inView": true
+  },
+  {
+   "source": "计算机技术",
+   "target": "编址",
+   "inView": true
+  },
+  {
+   "source": "计算机技术",
+   "target": "网上银行",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "网络应用",
+   "inView": true
+  },
+  {
+   "source": "计算机技术",
+   "target": "路由信息协议",
+   "inView": true
+  },
+  {
+   "source": "计算机技术",
+   "target": "进程间通信",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "递归调用",
+   "inView": false
+  },
+  {
+   "source": "计算机技术",
+   "target": "部分和",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "IP地址",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "传输速率",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "冲突避免",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "分治",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "单播",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "基本输入输出系统",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "实例",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "左值",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "平均查找长度",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "数据组织",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "更新",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "服务器",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "查找",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "深度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "空串",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "缓存",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "计算方法",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "跟踪",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "输入输出",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "退出",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "递归算法",
+   "inView": false
+  },
+  {
+   "source": "计算机科学",
+   "target": "顺序查找",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "分治",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "动态分配",
+   "inView": true
+  },
+  {
+   "source": "计算科学",
+   "target": "左值",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "应用程序",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "源程序",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "算法分析",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "算法正确性",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "网络地址转换",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "计算机",
+   "inView": true
+  },
+  {
+   "source": "计算科学",
+   "target": "选择排序",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "逻辑运算",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "邻接表",
+   "inView": false
+  },
+  {
+   "source": "计算科学",
+   "target": "阶乘",
+   "inView": false
+  },
+  {
+   "source": "访问控制",
+   "target": "冲突避免",
+   "inView": false
+  },
+  {
+   "source": "访问控制",
+   "target": "分布式计算",
+   "inView": false
+  },
+  {
+   "source": "访问控制",
+   "target": "开放系统互连",
+   "inView": false
+  },
+  {
+   "source": "访问控制",
+   "target": "访问控制列表",
+   "inView": false
+  },
+  {
+   "source": "访问控制",
+   "target": "鉴别数据",
+   "inView": false
+  },
+  {
+   "source": "访问控制列表",
+   "target": "网络攻击",
+   "inView": false
+  },
+  {
+   "source": "访问路径",
+   "target": "上传",
+   "inView": false
+  },
+  {
+   "source": "语法",
+   "target": "一元运算",
+   "inView": false
+  },
+  {
+   "source": "语法",
+   "target": "操作数",
+   "inView": false
+  },
+  {
+   "source": "象限",
+   "target": "函数",
+   "inView": false
+  },
+  {
+   "source": "负号",
+   "target": "状态方程",
+   "inView": false
+  },
+  {
+   "source": "负号",
+   "target": "逻辑表达式",
+   "inView": false
+  },
+  {
+   "source": "负整数",
+   "target": "区间",
+   "inView": false
+  },
+  {
+   "source": "赋值",
+   "target": "算法",
+   "inView": false
+  },
+  {
+   "source": "赋值语句",
+   "target": "源程序",
+   "inView": false
+  },
+  {
+   "source": "赋值语句",
+   "target": "递归调用",
+   "inView": false
+  },
+  {
+   "source": "跟踪",
+   "target": "漫游",
+   "inView": false
+  },
+  {
+   "source": "路由信息协议",
+   "target": "单播",
+   "inView": true
+  },
+  {
+   "source": "路由信息协议",
+   "target": "子网",
+   "inView": true
+  },
+  {
+   "source": "路由信息协议",
+   "target": "编址",
+   "inView": true
+  },
+  {
+   "source": "路由信息协议",
+   "target": "鉴别信息",
+   "inView": true
+  },
+  {
+   "source": "软件",
+   "target": "互联网",
+   "inView": false
+  },
+  {
+   "source": "软件",
+   "target": "基本输入输出系统",
+   "inView": false
+  },
+  {
+   "source": "软件",
+   "target": "网络应用",
+   "inView": false
+  },
+  {
+   "source": "软件验证",
+   "target": "不可抵赖",
+   "inView": false
+  },
+  {
+   "source": "输入向量",
+   "target": "邻边",
+   "inView": false
+  },
+  {
+   "source": "输入向量",
+   "target": "队头",
+   "inView": false
+  },
+  {
+   "source": "输入输出",
+   "target": "软件",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "二进制",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "交换律",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "代入",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "余数",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "公式",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "减法",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "函数",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "分配律",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "加法",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "动态规划",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "协议控制信息",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "反函数",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "图论",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "多项式",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "大于",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "常数",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "指数和",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "数值计算",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "方程",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "极值",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "概率",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "概率分布",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "正数",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "状态方程",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "病态",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "等价类",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "等式",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "约束条件",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "组合",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "组合逻辑",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "绝对值",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "计算方法",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "调和级数",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "逻辑运算",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "阶乘",
+   "inView": false
+  },
+  {
+   "source": "运算",
+   "target": "随机变量",
+   "inView": false
+  },
+  {
+   "source": "远程访问",
+   "target": "报文交换",
+   "inView": false
+  },
+  {
+   "source": "连接点",
+   "target": "广域网",
+   "inView": true
+  },
+  {
+   "source": "连续函数",
+   "target": "概率测度",
+   "inView": false
+  },
+  {
+   "source": "连通图",
+   "target": "全图",
+   "inView": false
+  },
+  {
+   "source": "连通图",
+   "target": "孩子",
+   "inView": false
+  },
+  {
+   "source": "连通域",
+   "target": "广度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "连通性",
+   "target": "连通图",
+   "inView": false
+  },
+  {
+   "source": "迭代",
+   "target": "中序遍历",
+   "inView": false
+  },
+  {
+   "source": "迭代",
+   "target": "二路归并",
+   "inView": false
+  },
+  {
+   "source": "迭代",
+   "target": "后序遍历",
+   "inView": false
+  },
+  {
+   "source": "迭代",
+   "target": "层次遍历",
+   "inView": false
+  },
+  {
+   "source": "迭代",
+   "target": "广度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "迭代",
+   "target": "递归算法",
+   "inView": false
+  },
+  {
+   "source": "迭代",
+   "target": "递归调用",
+   "inView": false
+  },
+  {
+   "source": "迭代循环",
+   "target": "级数求和",
+   "inView": false
+  },
+  {
+   "source": "选择排序",
+   "target": "动态规划",
+   "inView": false
+  },
+  {
+   "source": "通项",
+   "target": "调和级数",
+   "inView": false
+  },
+  {
+   "source": "通项",
+   "target": "迭代循环",
+   "inView": false
+  },
+  {
+   "source": "逻辑地址",
+   "target": "传输层",
+   "inView": false
+  },
+  {
+   "source": "逻辑符号",
+   "target": "布尔代数",
+   "inView": false
+  },
+  {
+   "source": "逻辑表达式",
+   "target": "传递函数",
+   "inView": false
+  },
+  {
+   "source": "逻辑运算",
+   "target": "公式",
+   "inView": false
+  },
+  {
+   "source": "逻辑运算",
+   "target": "竞争",
+   "inView": false
+  },
+  {
+   "source": "逻辑运算",
+   "target": "结合律",
+   "inView": false
+  },
+  {
+   "source": "邻接矩阵",
+   "target": "自环",
+   "inView": false
+  },
+  {
+   "source": "邻接表",
+   "target": "入度",
+   "inView": false
+  },
+  {
+   "source": "邻接表",
+   "target": "出度",
+   "inView": false
+  },
+  {
+   "source": "邻接表",
+   "target": "广度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "部分和",
+   "target": "一元运算",
+   "inView": false
+  },
+  {
+   "source": "配置项",
+   "target": "访问路径",
+   "inView": false
+  },
+  {
+   "source": "鉴别信息",
+   "target": "密钥长度",
+   "inView": false
+  },
+  {
+   "source": "鉴别数据",
+   "target": "单向鉴别",
+   "inView": false
+  },
+  {
+   "source": "链式法则",
+   "target": "维纳过程",
+   "inView": false
+  },
+  {
+   "source": "队列",
+   "target": "先进先出",
+   "inView": false
+  },
+  {
+   "source": "队列",
+   "target": "图的遍历",
+   "inView": true
+  },
+  {
+   "source": "队列",
+   "target": "层次遍历",
+   "inView": false
+  },
+  {
+   "source": "队列",
+   "target": "路由信息协议",
+   "inView": true
+  },
+  {
+   "source": "队列",
+   "target": "队头",
+   "inView": false
+  },
+  {
+   "source": "队列",
+   "target": "队尾",
+   "inView": false
+  },
+  {
+   "source": "队头",
+   "target": "先进先出",
+   "inView": false
+  },
+  {
+   "source": "阶乘",
+   "target": "鉴别信息",
+   "inView": false
+  },
+  {
+   "source": "除法",
+   "target": "余数",
+   "inView": false
+  },
+  {
+   "source": "除法",
+   "target": "分布式计算",
+   "inView": false
+  },
+  {
+   "source": "除法",
+   "target": "指数",
+   "inView": false
+  },
+  {
+   "source": "除法",
+   "target": "整除",
+   "inView": false
+  },
+  {
+   "source": "除法",
+   "target": "算法",
+   "inView": false
+  },
+  {
+   "source": "随机变量",
+   "target": "平均查找长度",
+   "inView": false
+  },
+  {
+   "source": "随机变量",
+   "target": "概率测度",
+   "inView": false
+  },
+  {
+   "source": "随机变量",
+   "target": "维纳过程",
+   "inView": false
+  },
+  {
+   "source": "非对称数字用户线",
+   "target": "以太网",
+   "inView": false
+  },
+  {
+   "source": "非线性结构",
+   "target": "层次遍历",
+   "inView": false
+  },
+  {
+   "source": "非线性结构",
+   "target": "广度优先搜索",
+   "inView": false
+  },
+  {
+   "source": "顺序存储",
+   "target": "存取时间",
+   "inView": false
+  },
+  {
+   "source": "顺序存储",
+   "target": "直接存取",
+   "inView": false
+  },
+  {
+   "source": "顺序查找",
+   "target": "平均查找长度",
+   "inView": false
+  },
+  {
+   "source": "顺序查找",
+   "target": "广度优先搜索",
+   "inView": false
+  }
+ ],
+ "view": [
+  "IP地址",
+  "互联网",
+  "互连网络",
+  "交换式以太网",
+  "传输层",
+  "信息交换",
+  "动态分配",
+  "协议控制信息",
+  "单播",
+  "图的遍历",
+  "子网",
+  "差错检验",
+  "广域网",
+  "操作数",
+  "操作系统",
+  "数字签名",
+  "数据流",
+  "数据网络",
+  "消息鉴别码",
+  "系统实现",
+  "结构图",
+  "缓冲",
+  "缓存",
+  "编址",
+  "网络互联",
+  "网络体系结构",
+  "网络应用",
+  "计算机",
+  "计算机技术",
+  "计算科学",
+  "资源共享",
+  "路由信息协议",
+  "连接点",
+  "鉴别信息",
+  "队列"
+ ]
+}

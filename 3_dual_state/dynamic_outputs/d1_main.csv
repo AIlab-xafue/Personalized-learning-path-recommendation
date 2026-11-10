@@ -1,0 +1,5 @@
+﻿strategy,completion,mastery,peak_emotion,steps,dropout,mismatch_rate,replans,divergence
+static,55.74,79.7,0.6588,37.0,7.08,73.9,0.0,0.0
+evolve,54.58,77.93,0.6494,35.46,11.11,72.51,0.0,0.0
+roll,56.85,80.89,0.6481,34.68,10.46,72.49,3.25,0.4573
+roll_nostab,56.81,80.4,0.6496,34.59,11.11,72.32,3.21,0.4587

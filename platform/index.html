@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>个性化学习路径推荐 · 可视化演示平台</title>
+<link rel="stylesheet" href="assets/app.css" />
+<script src="assets/echarts.min.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-mark">LP</div>
+      <div class="brand-text">
+        <b>个性化学习路径推荐平台</b>
+        <span>图谱约束 · 智能体 · 双态演化</span>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button data-view="home" class="active">概览</button>
+      <button data-view="profile">学习者画像</button>
+      <button data-view="dual">静态 ⇄ 动态</button>
+      <button data-view="graph">知识图谱</button>
+      <button data-view="results">实验证据</button>
+      <button data-view="method">方法与论文</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ================= 概览 ================= -->
+  <section class="view active" id="view-home">
+    <div class="hero">
+      <h1>从"一次规划"到"一路演化"：<br/>看得见的个性化学习路径</h1>
+      <p class="sub">
+        平台把论文里的两件事放在同一个界面上：用知识图谱给路径划出<b>不可违反的先修边界</b>，
+        用认知—情绪双态画像让学生在真实受挫时<b>当场改道</b>。
+        你可以设定一个学生，先看他沿一条静态路径会发生什么，再让系统接管，逐轮对比。
+      </p>
+      <div class="chips">
+        <span>MOOCCube 先修图谱</span>
+        <span>软硬约束协同解码</span>
+        <span>认知‐情绪双态</span>
+        <span>滚动重规划</span>
+        <span>目标保持</span>
+      </div>
+    </div>
+
+    <div class="grid g4" style="margin-top:16px">
+      <div class="card tight kpi blue">
+        <div class="v" id="kpi-legality">100<small>%</small></div>
+        <div class="k">路径结构合法率</div>
+        <div class="note">解码期 Trie 物理掩码，非法先修跳转概率清零</div>
+      </div>
+      <div class="card tight kpi teal">
+        <div class="v" id="kpi-epr">97.99<small>%</small></div>
+        <div class="k">有效路径率</div>
+        <div class="note">同时满足合法、无环、长度达标（第一篇论文）</div>
+      </div>
+      <div class="card tight kpi blue">
+        <div class="v" id="kpi-gain">+1.1<small>pp</small></div>
+        <div class="k">动态重规划完成率增益</div>
+        <div class="note">相对静态路径，18 个任务按学生配对比较（第 8 号脚本）</div>
+      </div>
+      <div class="card tight kpi warn">
+        <div class="v" id="kpi-drop">−1.1<small>pp</small></div>
+        <div class="k">峰值情绪负荷</div>
+        <div class="note">动态策略的峰值情绪略低，但路径变更更多；增益存在人群差异</div>
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card">
+        <div class="sec-title"><span class="bar"></span>系统闭环<small>一条路径从生成到执行</small></div>
+        <div class="flow">
+          <div class="step"><b>① 画像</b><span>性格 / 能力 / 情绪 / 条件</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><b>② 规划</b><span>图谱约束下的初始路径</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><b>③ 交互</b><span>PASS / 认知失败 / 情感失败</span></div>
+        </div>
+        <div class="flow" style="margin-top:8px">
+          <div class="step"><b>④ 干预</b><span>重试 / 先修补救 / 视频恢复</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><b>⑤ 重构</b><span>滚动重规划 + 目标保持</span></div>
+          <div class="arrow">↺</div>
+          <div class="step"><b>回到 ③</b><span>每轮重新估计"下一步学什么"</span></div>
+        </div>
+        <p class="small muted" style="margin-top:12px">
+          关键差别在第 ⑤ 步：静态系统走完一张事先画好的表，动态系统每一轮都在重新估计。
+        </p>
+      </div>
+      <div class="card">
+        <div class="sec-title"><span class="bar"></span>两个创新点的分工</div>
+        <div class="grid" style="gap:10px">
+          <div style="border-left:3px solid var(--primary);padding-left:12px">
+            <b>创新点一 · 宏观合法性</b>
+            <p class="small muted" style="margin:3px 0 0">
+              软约束（检索增强提示）负责"往哪儿走"，硬约束（Trie 掩码）负责"不许往哪儿走"，
+              防环惩罚 + 束搜索负责"别原地打转"。针对幻觉与逻辑断裂。
+            </p>
+          </div>
+          <div style="border-left:3px solid var(--accent);padding-left:12px">
+            <b>创新点二 · 微观动态性</b>
+            <p class="small muted" style="margin:3px 0 0">
+              双态画像区分"学不会"与"撑不住"，用不同操作去救，
+              并始终记住原来的目标——支持可以临时插入，目标不能被悄悄替换。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <div class="sec-title"><span class="bar"></span>建议的演示路径<small>答辩现场 3 分钟走完</small></div>
+      <div class="grid g3">
+        <div>
+          <span class="pill blue">第 1 步</span>
+          <p class="small" style="margin-top:6px">在「学习者画像」选<b>稳健均衡型</b>（默认）。先在<b>计算机网络</b>生成初始路径，再点<b>数学</b>或<b>操作系统</b>，同一个学生会得到完全不同的路径。</p>
+        </div>
+        <div>
+          <span class="pill teal">第 2 步</span>
+          <p class="small" style="margin-top:6px">到「静态 ⇄ 动态」点开始回放：左边不改计划，右边每轮重估、随时改道。</p>
+        </div>
+        <div>
+          <span class="pill warn">第 3 步</span>
+          <p class="small" style="margin-top:6px">看右轨第一次重规划时路径如何变色，再切到「实验证据」看群体统计与边界条件。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 画像 ================= -->
+  <section class="view" id="view-profile">
+    <div class="grid g-side">
+      <div class="card">
+        <div class="sec-title"><span class="bar"></span>选择学生模板</div>
+        <div class="persona-list" id="personaList"></div>
+
+        <div class="sec-title" style="margin-top:20px"><span class="bar"></span>微调画像参数</div>
+        <div id="sliders"></div>
+
+        <div class="field">
+          <label>交互预算（轮）<b id="budgetVal">50</b></label>
+          <input type="range" id="budget" min="20" max="70" step="5" value="50" />
+        </div>
+        <div class="field" style="margin-bottom:0">
+          <label>时间压力 τ<b id="pressureVal">0.30</b></label>
+          <input type="range" id="pressure" min="0" max="1" step="0.05" value="0.3" />
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <div class="sec-title"><span class="bar"></span>本轮学习目标<small id="subjNote">同一张图谱，五个学科</small></div>
+          <div class="chips-pick" id="subjectPick" style="margin-bottom:12px"></div>
+          <p class="small muted" id="taskHint"></p>
+          <div class="chips-pick" id="targetPick"></div>
+          <div class="btn-row" style="margin-top:16px">
+            <button class="btn" id="btnPlan">生成初始路径 →</button>
+            <button class="btn ghost" id="btnToDual">直接看双轨对比</button>
+            <span class="small muted" id="planMsg"></span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="sec-title"><span class="bar"></span>初始路径<small>仅依据当前画像规划一次</small></div>
+          <div class="pathlist" id="planPreview" style="min-height:70px"></div>
+          <div class="statline" id="planStats"></div>
+          <div class="small muted" id="planWhy" style="margin-top:8px;line-height:1.7"></div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="sec-title"><span class="bar"></span>同一名学生，换一门学科会走成什么样<small>点击卡片切换学科</small></div>
+          <div class="subj-grid" id="subjOverview"></div>
+          <div class="small muted" id="subjFootnote" style="margin-top:10px;line-height:1.7"></div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="sec-title"><span class="bar"></span>画像到干预的映射</div>
+          <div class="grid g3">
+            <div class="note gray">
+              <b>能力低、情绪也低</b><br/>
+              <span class="small">认知失败后插入<b>先修补救</b>，用更容易的前驱概念补缺口。</span>
+            </div>
+            <div class="note gray">
+              <b>情绪 &gt; 0.70</b><br/>
+              <span class="small">暂缓推进，切换到<b>视频等恢复性资源</b>，先把负荷降下来。</span>
+            </div>
+            <div class="note gray">
+              <b>连续两次卡住</b><br/>
+              <span class="small">触发<b>滚动重规划</b>，允许把当前目标后移，重排剩余目标。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 双轨 ================= -->
+  <section class="view" id="view-dual">
+    <div class="card tight" style="margin-bottom:14px">
+      <div class="toolbar">
+        <button class="btn" id="btnPlay">▶ 开始回放</button>
+        <button class="btn ghost sm" id="btnStep">单步</button>
+        <button class="btn ghost sm" id="btnReset">重置</button>
+        <div class="speed" id="speed">
+          <button data-ms="700">慢</button>
+          <button data-ms="320" class="on">中</button>
+          <button data-ms="120">快</button>
+        </div>
+        <div class="spacer"></div>
+        <span class="small muted" id="dualSubject"></span>
+        <span class="small muted" id="roundLabel">第 0 轮 / 共 0 轮</span>
+      </div>
+      <div class="timeline"><div class="trackline"><div class="fill" id="tlFill"></div></div></div>
+      <div class="small muted" style="margin-top:8px" id="dualHint">
+        左轨保持入学时的计划不变，只在执行期做局部修补；右轨每轮根据双态画像重新估计"下一步学什么"。
+      </div>
+    </div>
+
+    <div class="grid g2">
+      <div class="track static" id="trackStatic">
+        <div class="track-head">
+          <span class="dot"></span><b>静态路径</b>
+          <span class="pill gray tag">入学时规划一次</span>
+        </div>
+        <div class="track-body">
+          <div class="meters">
+            <div class="meter ability"><div class="t">能力 a<b>0.50</b></div><div class="bar"><i style="width:50%"></i></div></div>
+            <div class="meter emotion"><div class="t">情绪负荷 e<b>0.30</b></div><div class="bar"><i style="width:30%"></i></div></div>
+          </div>
+          <div class="pathlist"></div>
+          <div class="statline"></div>
+          <div class="feed"></div>
+        </div>
+      </div>
+
+      <div class="track dynamic" id="trackDynamic">
+        <div class="track-head">
+          <span class="dot"></span><b>动态重构</b>
+          <span class="pill blue tag">双态 + 滚动重规划</span>
+        </div>
+        <div class="track-body">
+          <div class="meters">
+            <div class="meter ability"><div class="t">能力 a<b>0.50</b></div><div class="bar"><i style="width:50%"></i></div></div>
+            <div class="meter emotion"><div class="t">情绪负荷 e<b>0.30</b></div><div class="bar"><i style="width:30%"></i></div></div>
+          </div>
+          <div class="pathlist"></div>
+          <div class="statline"></div>
+          <div class="feed"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-top:14px">
+      <div class="card tight">
+        <div class="sec-title"><span class="bar"></span>情绪负荷轨迹<small>虚线为切换阈值 0.70</small></div>
+        <div class="chart" id="chartEmotion"></div>
+      </div>
+      <div class="card tight">
+        <div class="sec-title"><span class="bar"></span>能力增长轨迹<small>纵轴已按实际变化范围放大</small></div>
+        <div class="chart" id="chartAbility"></div>
+        <div class="small muted" id="abilNote" style="margin-top:4px;line-height:1.6"></div>
+      </div>
+    </div>
+
+    <div class="card tight" style="margin-top:14px">
+      <div class="toolbar">
+        <div class="sec-title" style="margin:0"><span class="bar"></span>慢变量的累积效应<small>同一学习者连续完成 5 次同类任务，能力跨任务保留</small></div>
+        <div class="spacer"></div>
+        <span class="small muted">展示性扩展：论文实验为单次任务</span>
+      </div>
+      <div class="chart short" id="chartCum" style="margin-top:8px"></div>
+    </div>
+
+    <div class="card tight" style="margin-top:14px">
+      <div class="toolbar">
+        <div class="sec-title" style="margin:0"><span class="bar"></span>同一批学生（n=60）的结局对比</div>
+        <div class="spacer"></div>
+        <span class="small muted">同任务、同预算、同随机流，按学生个体配对</span>
+      </div>
+      <div class="chart short" id="chartSummary" style="margin-top:8px"></div>
+      <div class="small muted" id="summaryNote" style="margin-top:8px;line-height:1.7"></div>
+    </div>
+  </section>
+
+  <!-- ================= 图谱 ================= -->
+  <section class="view" id="view-graph">
+    <div class="grid g-side">
+      <div class="card">
+        <div class="sec-title"><span class="bar"></span>子图信息</div>
+        <dl class="kv" id="graphMeta"></dl>
+        <div class="legend" style="margin-top:14px;flex-direction:column;gap:6px">
+          <span><i style="background:#1f5fa8"></i>当前学习节点</span>
+          <span><i style="background:#0e9488"></i>已掌握</span>
+          <span><i style="background:#c47d15"></i>本任务目标</span>
+          <span><i style="background:#c9d3e0"></i>候选概念（颜色越深难度越高）</span>
+        </div>
+        <div class="note gray" style="margin-top:14px" id="graphNote">
+          <b>说明：</b>子图为"数据结构"两跳后继邻域，用于演示路径的拓扑约束。
+        </div>
+      </div>
+      <div class="card tight">
+        <div class="chart tall" id="chartGraph"></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <div class="sec-title"><span class="bar"></span>节点详情<small>点击图中节点查看结构难度与先修关系</small></div>
+      <div id="nodeDetail" class="small muted">尚未选择节点。</div>
+    </div>
+  </section>
+
+  <!-- ================= 实验证据 ================= -->
+  <section class="view" id="view-results">
+    <div class="grid g2">
+      <div class="card tight">
+        <div class="sec-title"><span class="bar"></span>策略对比<small>30 条路径 × 10 次重复 × 40 名/组合</small></div>
+        <div class="chart" id="chartStrategies"></div>
+      </div>
+      <div class="card tight">
+        <div class="sec-title"><span class="bar"></span>时间预算与动态增益</div>
+        <div class="chart" id="chartBudget"></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <div class="sec-title"><span class="bar"></span>第一篇论文：软硬协同机制消融<small>MOOCCube，T5-small</small></div>
+      <table class="tb" id="tbAblation"></table>
+      <p class="small muted" style="margin-top:8px">
+        结论：硬约束把幻觉压到 0，但只靠硬约束会陷入局部循环（无环率 84.47%）；软策略负责把路径"拉长、拉顺"。
+      </p>
+    </div>
+
+    <div class="grid g2" style="margin-top:14px">
+      <div class="card tight">
+        <div class="sec-title"><span class="bar"></span>学习者异质性<small>尽责性 × 神经质，动态减静态（百分点）</small></div>
+        <div class="chart" id="chartHetero"></div>
+      </div>
+      <div class="card tight">
+        <div class="sec-title"><span class="bar"></span>该看哪张表<small>平台数字与论文表格的对应</small></div>
+        <table class="tb">
+          <thead><tr><th>平台面板</th><th>论文出处</th></tr></thead>
+          <tbody>
+            <tr><td>策略对比</td><td>第 4 章 表 4-6（四策略配对比较）</td></tr>
+            <tr><td>时间预算</td><td>第 4 章 表 4-8（预算条件）</td></tr>
+            <tr><td>异质性</td><td>第 4 章 表 4-7（性格组合）</td></tr>
+            <tr><td>消融表</td><td>第 3 章 表 3-4</td></tr>
+            <tr><td>双轨回放</td><td>第 4 章 4.3 节机制演示（同参数单次抽样）</td></tr>
+          </tbody>
+        </table>
+        <div class="note blue" style="margin-top:12px">
+          双轨回放用 JavaScript 复刻了第 8 号脚本的概率模型，参数一致但随机流不同，
+          因此单次回放的步数不会与论文表格逐位对齐；群体面板直接读取 Python 实验输出，与论文一致。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 方法 ================= -->
+  <section class="view" id="view-method">
+    <div class="grid g2">
+      <div class="card">
+        <div class="sec-title"><span class="bar"></span>创新点一：软硬协同的路径生成</div>
+        <p class="small">
+          把"合法性"交给解码器底层，把"往哪儿走"交给语义引导。硬约束在 Logits 空间把非法词元置为 −∞，
+          软约束把图谱局部结构与画像写进提示词，防环惩罚与束搜索负责长程连贯。
+        </p>
+        <div class="formula">P(y<sub>t</sub> | y<sub>&lt;t</sub>, x) = softmax( z<sub>t</sub> + M<sub>t</sub> ),　M<sub>t</sub>(w) = 0 if w ∈ 𝒜<sub>t</sub> else −∞<span class="no">(3-6)</span></div>
+        <div class="formula">S(τ) = (1/|τ|<sup>α</sup>) Σ log P(y<sub>i</sub> | y<sub>&lt;i</sub>) − λ·𝟙[y<sub>i</sub> ∈ 𝒱<sub>hist</sub>]<span class="no">(3-9)</span></div>
+        <dl class="kv" style="margin-top:10px">
+          <dt>𝒜<sub>t</sub></dt><dd>当前节点在 KG 中的合法后继（经噪声黑名单过滤）</dd>
+          <dt>M<sub>t</sub></dt><dd>词元级掩码向量，由 KG-Trie 在每一步给出</dd>
+          <dt>λ</dt><dd>防环惩罚系数，实验取 2.5</dd>
+        </dl>
+      </div>
+
+      <div class="card">
+        <div class="sec-title"><span class="bar"></span>创新点二：双态驱动与滚动重规划</div>
+        <p class="small">
+          能力是慢变量（每 5 轮按窗口成功率增长），情绪是快变量（每轮向基线回归，失败抬升、恢复下降）。
+          重规划的代价函数同时看失败风险、难度失配、绕行成本与重复访问。
+        </p>
+        <div class="formula">e<sub>t+1</sub> = e<sub>t</sub> + ρ(ē − e<sub>t</sub>) + δ<sub>f</sub>·𝟙[fail] − δ<sub>r</sub>·𝟙[rest]<span class="no">(4-1)</span></div>
+        <div class="formula">a<sub>t+1</sub> = a<sub>t</sub> + η(1 − a<sub>t</sub>)·max(0, s̄ − 0.5)<span class="no">(4-2)</span></div>
+        <div class="formula">d* = 0.30 + 0.45a − 0.25e　；　J(v) = λ<sub>1</sub>R(v) + λ<sub>2</sub>|d<sub>v</sub> − d*| + λ<sub>3</sub>·bridge(v)<span class="no">(4-3)</span></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <div class="sec-title"><span class="bar"></span>平台—论文—代码 的三向对应</div>
+      <table class="tb">
+        <thead><tr><th>界面上看到的东西</th><th>论文位置</th><th>代码位置</th></tr></thead>
+        <tbody>
+          <tr><td>知识图谱与难度着色</td><td>3.1 节 目标导向图谱构建</td><td><code class="mono">Title2/8_dynamic_path_evolution.py :: class KG</code></td></tr>
+          <tr><td>初始路径（静态）</td><td>3.3 节 软硬协同解码</td><td><code class="mono">Title2/8 :: Replanner.plan</code>、<code class="mono">big/4_fusion_generation.py</code></td></tr>
+          <tr><td>能力 / 情绪曲线</td><td>4.1 节 双态画像</td><td><code class="mono">Title2/8 :: Learner.fast_update / slow_update</code></td></tr>
+          <tr><td>PASS / 认知失败 / 情感失败</td><td>4.2 节 高保真模拟器</td><td><code class="mono">Title2/8 :: p_affective / p_success</code></td></tr>
+          <tr><td>路径变色与"重规划"提示</td><td>4.3 节 局部动态重构</td><td><code class="mono">Title2/8 :: run_episode</code>（<code class="mono">trace</code> 参数）</td></tr>
+          <tr><td>群体对比与预算曲线</td><td>4.4 节 实验</td><td><code class="mono">Title2/dynamic_outputs/*.json</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  西安财经大学 · 电子信息硕士专业学位论文配套演示系统　|　数据来源：MOOCCube 先修关系子集　|　本地运行，无需联网
+</footer>
+
+<script src="assets/engine.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

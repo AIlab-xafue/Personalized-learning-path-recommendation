@@ -1,0 +1,34 @@
+{
+  "frequency": [
+    {
+      "replan_every": 1,
+      "completion": 61.72,
+      "mean_divergence": 0.4259,
+      "path_changes": 5.28
+    },
+    {
+      "replan_every": 2,
+      "completion": 57.81,
+      "mean_divergence": 0.4284,
+      "path_changes": 5.01
+    },
+    {
+      "replan_every": 3,
+      "completion": 60.16,
+      "mean_divergence": 0.4471,
+      "path_changes": 4.18
+    },
+    {
+      "replan_every": 5,
+      "completion": 59.38,
+      "mean_divergence": 0.4491,
+      "path_changes": 3.34
+    },
+    {
+      "replan_every": 10,
+      "completion": 58.59,
+      "mean_divergence": 0.4457,
+      "path_changes": 3.02
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "budget": [
+    {
+      "budget": 30,
+      "static": 37.5,
+      "roll": 36.72,
+      "gain": -0.78
+    },
+    {
+      "budget": 40,
+      "static": 55.47,
+      "roll": 58.59,
+      "gain": 3.12
+    },
+    {
+      "budget": 50,
+      "static": 60.94,
+      "roll": 62.5,
+      "gain": 1.56
+    },
+    {
+      "budget": 70,
+      "static": 79.69,
+      "roll": 79.69,
+      "gain": 0.0
+    }
+  ]
+}
