@@ -87,6 +87,70 @@ ls
 
 创建完成后页面会显示一串命令。**先不要照着做**——那个页面默认假设你本地是空的，而我们的文件已经准备好了，直接照做会出问题。
 
+### 2.4 不装 Git 的备选路线：纯网页上传
+
+第 3–6 章讲的都是命令行推送。如果你手上只有浏览器（例如临时借用老师的电脑），
+也可以完全不装 Git，用 GitHub 网页把 119 个文件拖上去。
+
+**代价**：丢掉本地那 4 次有意义的提交历史（网页上传只产生 1–2 个 commit），
+且提交记录的署名是当前登录账号（老师的）。代码内容与命令行推送完全一致。
+
+**可行性已核对**：119 个文件 / 35.43 MB，最大单文件 `1_prototype/database/rel_user_video.csv`
+为 9.76 MB，低于网页上传单文件 25 MiB 上限。
+
+> ⚠️ 建仓时 **Owner 必须选组织 `Allab-xafue`**，不要选成个人账号，否则仓库挂在自己名下，老师进组织看不到。
+
+#### 步骤 1：建空仓库
+
+同第 2 章的表格，注意三点：Owner 选 `Allab-xafue`；README / .gitignore / license **三个都留空**；
+点 **Create repository**。
+
+#### 步骤 2：进上传页面
+
+建完仓库会跳到只有 "Quick setup" 的空白页，点页面中间那行 **`uploading an existing file`**。
+也可以直接访问：
+
+```
+https://github.com/Allab-xafue/moocube-lpr/upload/main
+```
+
+#### 步骤 3：分批拖拽（关键）
+
+GitHub 网页一次最多接受 **100 个文件**，我们有 119 个，必须分批。
+每批都要**拖整个文件夹**，不要进去全选文件——只有拖文件夹才能保留 `1_prototype/database/` 这种层级。
+
+| 批次 | 拖什么 | 文件数 | 建议 commit message |
+|---|---|---|---|
+| 1 | `1_prototype` 文件夹 | 24 | `add prototype code and dataset` |
+| 2 | `2_generation` 文件夹 | 28 | `add generation experiments` |
+| 3 | `3_dual_state` 文件夹 | 40 | `add dual-state experiments` |
+| 4 | `platform` 文件夹 | 13 | `add demo platform` |
+| 5 | `docs`、`data`、`scripts` 三个文件夹 | 7 | `add docs and configs` |
+| 6 | 根目录 7 个文件 | 7 | `add root configs` |
+
+第 6 批的 7 个文件：`.gitattributes`、`.gitignore`、`CITATION.cff`、`LICENSE`、
+`README.md`、`README_EN.md`、`requirements.txt`。
+
+> 看不到 `.gitignore` / `.gitattributes`？资源管理器若开了"隐藏已知文件类型的扩展名"，
+> 它们会显示成 `gitignore`，这类文件最容易漏。漏了不必重传，在仓库页面用
+> **Add file → Create new file**，文件名直接输 `.gitignore`，把本地内容粘进去即可。
+
+每拖完一批，页面下方会列出待提交文件，**先确认左侧路径带 `/`**
+（例如 `1_prototype/database/rel_user_video.csv`），再点绿色 **Commit changes**。
+
+#### 步骤 4：核对传完没有
+
+打开仓库首页，应当看到 7 个目录（`1_prototype`、`2_generation`、`3_dual_state`、
+`docs`、`data`、`platform`、`scripts`）加 7 个根文件，共 14 项；
+点开 `1_prototype/database` 能看到 `rel_user_video.csv`（9.76 MB）等数据文件，
+点 `LICENSE` 能看到 MIT。
+
+#### 网页路线的三个坑
+
+1. **空目录不会被上传**——Git 本身不跟踪空目录，不影响运行；
+2. **断网或卡住**——刷新页面看已提交了几批，GitHub 会保留，接着传剩下的；
+3. **拖完发现文件全平铺在根目录**——说明你拖的是文件夹**里面的文件**而不是文件夹本身，删掉重拖。
+
 ---
 
 ## 3. 第二步：推送前检查（这步别省）
