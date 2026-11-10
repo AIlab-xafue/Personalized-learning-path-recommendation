@@ -102,64 +102,144 @@ when load crosses a threshold.
 
 ```
 moocube-lpr/
-├── README.md                 Chinese (main)
-├── README_EN.md              This file
-├── LICENSE                   MIT (code) + CC0 data notice
-├── requirements.txt
-├── .gitignore
-│
-├── docs/
-│   ├── FILE_INDEX.md         ★ Per-file description, Chinese + English
-│   ├── DATA.md               Where to get the dataset and model weights
-│   └── UPLOAD_GUIDE.md       ★ Step-by-step guide to publishing on GitHub
-│
-├── 1_prototype/              Stage 1: small-scale prototype
-│   ├── 0.解析数据集转换成知识图谱.py   Parse dataset into a knowledge graph
-│   ├── 1.先修关系提取数据集.py          Extract prerequisite pairs for fine-tuning
-│   ├── 2.初步微调模型.py                Fine-tune mT5
-│   ├── 3.初步使用模型.py                Run inference against Neo4j
-│   ├── 4.训练成本模型.py                Train the cost (difficulty) model
-│   ├── 5.RL 训练框架.py                 Minimal RLHF loop, no TRL dependency
-│   └── database/             18 CSV files converted from MOOCCube (~14 MB)
-│
-├── 2_generation/             Stage 2: path generation, baselines, ablations
-│   ├── 0.*.py                Graph construction (TSV import, dataset→KG, prereqs)
-│   ├── 1_build_kg_cache.py   Export the constraint lookup table
-│   ├── 2_soft_constraint_rag.py      Baseline: prompt only
-│   ├── 3_hard_constraint_decoding.py Hard constraint: Trie masking
-│   ├── 4_fusion_generation.py        Ours: fusion + cycle-aware beam search
-│   ├── 5_evaluate_legality.py        Metrics: SL / LR / EPR / AL
-│   ├── 6-10 + 两个新基线.py          Comparisons: KGR / RL / CoT / A* / GRU
-│   ├── *消融实验.py                  Ablations for beam width and repetition penalty
-│   └── kg_transition_cache.json      Constraint table (~9 MB, rebuildable)
-│
-├── 3_dual_state/             Stage 3: dual-state execution and dynamic evolution
-│   ├── 1-6.*.py              Environment, simulator, profile, batch experiments
-│   ├── 7_dual_state_extended_experiments.py  Ablation, cohort, statistics
-│   ├── 8_dynamic_path_evolution.py           ★ Main DTE-RR experiment
-│   ├── 9-12_*.py             Multi-seed robustness, path-source sensitivity
-│   ├── 13_export_subject_tasks.py            Five subject task bundles
-│   ├── 10_export_platform_data.py            Export JSON for the platform
-│   └── *_outputs/            ★ Committed results (CSV / JSON / PNG)
-│
-├── platform/                 Offline demo platform (static + stdlib server)
-│   ├── index.html            Single-page app, six tabs
-│   ├── server.py             Local HTTP server, zero third-party deps
-│   ├── assets/               app.js / engine.js / app.css / echarts.min.js
-│   └── data/                 graph / task / subjects / trajectories / aggregate
-│
-├── scripts/
-│   └── download_mt5.py       Fetch the google/mt5-small base model
-│
-└── data/                     External data goes here (contents not distributed)
-    ├── README.md             Where the data comes from and where to put it
-    └── MOOCCube/relations/
-        └── prerequisite-dependency.json   Prerequisite table, 55 KB, bundled
-                                           so Stage 3 needs no full dataset
+├── README.md                             Chinese main document
+├── README_EN.md                          This file
+├── LICENSE                               MIT (code) + CC0 data notice
+├── CITATION.cff                          Citation metadata, powers GitHub's Cite button
+├── requirements.txt                      Dependencies, grouped by purpose
+├── .gitignore                            Excludes models, dataset, virtualenvs
+├── .gitattributes                        Line endings; marks echarts as vendored
+├── docs/                                 Index, data guide, upload guide, coverage check
+│   ├── FILE_INDEX.md                     ★ Per-file description of all 119 files
+│   ├── DATA.md
+│   ├── UPLOAD_GUIDE.md                   ★ Step-by-step GitHub publishing guide
+│   └── check_file_index.py               Self-check for undocumented files
+├── data/                                 Mount point for external data (only a 55 KB table is bundled)
+│   ├── README.md                         Where the data comes from and where to put it
+│   └── MOOCCube/                         Download the raw dataset here (not committed)
+│       └── relations/
+│           └── prerequisite-dependency.json Prerequisite table, 55 KB, saves a 3.9 GB download
+├── 1_prototype/                          Stage 1: small-scale prototype (Neo4j + mT5 + minimal RL)
+│   ├── 0.解析数据集转换成知识图谱.py
+│   ├── 1.先修关系提取数据集.py
+│   ├── 2.初步微调模型.py
+│   ├── 3.初步使用模型.py
+│   ├── 4.训练成本模型.py
+│   ├── 5.RL 训练框架.py
+│   └── database/                         18 tables converted from MOOCCube (~13 MB)
+│       ├── concept.csv
+│       ├── course.csv
+│       ├── video.csv
+│       ├── paper.csv
+│       ├── teacher.csv
+│       ├── school.csv
+│       ├── user.csv
+│       ├── rel_prerequisite_dependency.csv
+│       ├── rel_course_concept.csv
+│       ├── rel_course_video.csv
+│       ├── rel_video_concept.csv
+│       ├── rel_concept_paper.csv
+│       ├── rel_field_concept.csv
+│       ├── rel_school_course.csv
+│       ├── rel_school_teacher.csv
+│       ├── rel_teacher_course.csv
+│       ├── rel_user_course.csv
+│       └── rel_user_video.csv
+├── 2_generation/                         Stage 2: path generation (constraints, baselines, ablations, results)
+│   ├── 0.数据集转知识图谱.py
+│   ├── 0.TSV文件导入关系.py
+│   ├── 0.补充先修关系.py
+│   ├── 0_delete_relations.cypher
+│   ├── 1_build_kg_cache.py               ★ Export the constraint table (Neo4j → local)
+│   ├── 2_soft_constraint_rag.py
+│   ├── 3_hard_constraint_decoding.py     ★ Hard constraint: Trie + logits masking
+│   ├── 4_fusion_generation.py            ★ Ours: fusion + cycle-aware beam search
+│   ├── 4.融合_提示词多问题.py
+│   ├── 4_fusion_generation_差异化画像对比试验.py
+│   ├── 5_evaluate_legality.py            ★ Metrics: SL / LR / EPR / AL
+│   ├── 6_单门课适用实验.py
+│   ├── 7_单门课三组对比试验.py
+│   ├── 8_对比KGR (基于图的传统推荐).py
+│   ├── 9_对比“基于强化学习的路径推荐”.py
+│   ├── 10_对比“纯 Prompt Engineering (CoT  Few-shot)”.py
+│   ├── 两个新基线.py
+│   ├── 束搜索宽度（Beam Size）进行消融实验.py
+│   ├── 防环惩罚系数消融.py
+│   ├── kg_transition_cache.json          Constraint table, 8.9 MB, rebuildable
+│   ├── generated_results_soft.txt
+│   ├── generated_results_hard.txt
+│   ├── generated_results_fusion.txt
+│   ├── generated_results_fusion_final.txt
+│   ├── generated_results_single_course.txt
+│   ├── beam_size_ablation_results.csv
+│   ├── repetition_penalty_ablation_results.csv
+│   └── baseline_astar_grurnn_results.csv
+├── 3_dual_state/                         Stage 3: dual-state execution and dynamic evolution
+│   ├── 1.构建目标导向的环境与图谱.py
+│   ├── 2.构建高保真用户模拟器.py
+│   ├── 3.构建智能体与动态画像.py
+│   ├── 4.极速生成路径-多交互主实验.py
+│   ├── 5.双版本主实验.py
+│   ├── 6.批量多学生实验.py
+│   ├── 7_dual_state_extended_experiments.py
+│   ├── 8_dynamic_path_evolution.py       ★ Rolling replanning (DTE-RR, D1–D6)
+│   ├── 9_dynamic_multiseed.py            Ten-seed robustness (reuses script 8)
+│   ├── 10_export_platform_data.py        Export JSON for the platform
+│   ├── 11_path_source_sensitivity.py
+│   ├── 12_multiseed_robustness.py
+│   ├── 13_export_subject_tasks.py        Five subject bundles
+│   ├── kg_transition_cache1.json         Stage-3 adjacency table, 8.4 MB (410 concepts)
+│   ├── README_dynamic_experiments.md     D1–D6 design notes
+│   ├── README_补充实验_中期.md           Midterm supplementary experiments
+│   ├── paper_revision/                   Manuscript patching helpers (need external _docx_kit)
+│   │   ├── patch_cn_paper.py
+│   │   └── patch_en_paper.py
+│   ├── dual_state_outputs/               Output of script 7: 9 files
+│   │   ├── experiment_summary.json
+│   │   ├── main_experiment_per_seed.csv
+│   │   ├── ablation_per_seed.csv
+│   │   ├── cohort_per_seed.csv
+│   │   ├── sensitivity_per_seed.csv
+│   │   ├── statistical_tests.csv
+│   │   ├── figure1_dual_state_framework.png
+│   │   ├── figure2_main_outcomes.png
+│   │   └── figure3_video_sensitivity.png
+│   ├── dynamic_outputs/                  Output of scripts 8 and 9: 10 files
+│   │   ├── meta.json                     Seed, runtime, graph size, all hyper-parameters
+│   │   ├── d1_main.json
+│   │   ├── d1_main.csv
+│   │   ├── d2_heterogeneity.json
+│   │   ├── d3_frequency.json
+│   │   ├── d4_lag_prior.json
+│   │   ├── d5_budget.json
+│   │   ├── d6_shock.json
+│   │   ├── m1_multiseed.json
+│   │   └── m1_multiseed.csv
+│   └── thesis_outputs/                   Output of scripts 11 and 12: 3 files
+│       ├── multiseed_robustness.json
+│       ├── path_source_sensitivity.json
+│       └── path_source_sensitivity.csv
+├── platform/                             Offline demo platform (static front end + stdlib server)
+│   ├── index.html                        Single-page app, six tabs
+│   ├── server.py                         Local server, zero third-party deps
+│   ├── 启动平台.bat                      One-click launcher on Windows
+│   ├── README.md
+│   ├── assets/                           Front-end assets
+│   │   ├── app.js
+│   │   ├── engine.js                     ★ JS port of the engine (dual-track replay)
+│   │   ├── app.css
+│   │   └── echarts.min.js
+│   └── data/                             Platform data exported by scripts 10 and 13
+│       ├── graph.json                    410 concepts / 905 edges
+│       ├── task.json
+│       ├── subjects.json
+│       ├── trajectories.json
+│       └── aggregate.json
+└── scripts/                              Utilities
+    └── download_mt5.py                   Fetch google/mt5-small
 ```
 
-See `docs/FILE_INDEX.md` for a per-file description with inputs, outputs, and
-the corresponding thesis chapter.
+The tree above is the **complete manifest** — all 119 files, nothing omitted. For what each file does, what it reads and what it writes, see `docs/FILE_INDEX.md` (bilingual, with all 18 data tables and all 22 result files described individually). After adding or removing files, run `python docs/check_file_index.py` to catch anything undocumented.
 
 ---
 

@@ -25,7 +25,7 @@ GitHub 官方文档对仓库与文件大小的规定（2026 年 11 月核对）�
 | `google/mt5-small` 基座 | 约 1.1 GB | 否 |
 | 三个微调模型合计 | 约 8.5 GB | 否 |
 | `kg_transition_cache*.json` | 每个约 9 MB | **是** |
-| `1_prototype/database/*.csv` | 约 14 MB | **是** |
+| `1_prototype/database/*.csv` | 约 13 MB（18 张表） | **是** |
 | 全部实验结果 | 约 3 MB | **是** |
 
 单个最大的数据文件 `user_video_act.json` 就有 **1.63 GB**，是 100 MiB 上限的 16 倍，因此不存在"压缩一下塞进去"的可能。

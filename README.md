@@ -76,63 +76,144 @@ MOOC 场景下的学习路径推荐有两个长期分家的做法：
 
 ```
 moocube-lpr/
-├── README.md                 本文件（中文）
-├── README_EN.md              English version
-├── LICENSE                   MIT（代码）+ CC0 数据声明
-├── requirements.txt          运行依赖
-├── .gitignore
-│
-├── docs/
-│   ├── FILE_INDEX.md         ★ 逐文件说明（中英对照）
-│   ├── DATA.md               数据集与模型权重获取
-│   └── UPLOAD_GUIDE.md       ★ 从零上传到 GitHub 的完整步骤
-│
-├── 1_prototype/              阶段一：小规模原型（Neo4j + mT5 微调 + 简化 RL）
+├── README.md                             中文主文档
+├── README_EN.md                          English version
+├── LICENSE                               MIT（代码）+ CC0 数据声明
+├── CITATION.cff                          引用元数据，GitHub 显示「Cite」按钮
+├── requirements.txt                      第三方依赖，按用途分组
+├── .gitignore                            排除模型、数据集、虚拟环境
+├── .gitattributes                        统一换行；标注 echarts 为第三方库
+├── docs/                                 说明、数据、上传指南、覆盖自检
+│   ├── FILE_INDEX.md                     ★ 119 个文件逐个说明（中英对照）
+│   ├── DATA.md
+│   ├── UPLOAD_GUIDE.md                   ★ 从零上传到 GitHub 的完整步骤
+│   └── check_file_index.py               自检：是否有文件未被说明
+├── data/                                 外部数据落位（只带一个 55 KB 先修表）
+│   ├── README.md                         数据从哪来、放哪里
+│   └── MOOCCube/                         原始数据集下载到这里（不入库）
+│       └── relations/
+│           └── prerequisite-dependency.json 先修关系表 55 KB，让阶段三免下载 3.9 GB
+├── 1_prototype/                          阶段一：小规模原型（Neo4j + mT5 微调 + 简化 RL）
 │   ├── 0.解析数据集转换成知识图谱.py
 │   ├── 1.先修关系提取数据集.py
 │   ├── 2.初步微调模型.py
 │   ├── 3.初步使用模型.py
 │   ├── 4.训练成本模型.py
 │   ├── 5.RL 训练框架.py
-│   └── database/             由 MOOCCube 转出的 18 个 CSV（约 14 MB）
-│
-├── 2_generation/             阶段二：路径生成（软/硬约束解码、基线、消融）
-│   ├── 0.*.py                建图：TSV 导入、数据集转 KG、补先修关系
-│   ├── 1_build_kg_cache.py   导出约束查找表
-│   ├── 2_soft_constraint_rag.py     基线：仅提示
-│   ├── 3_hard_constraint_decoding.py 硬约束：Trie 掩码
-│   ├── 4_fusion_generation.py       本文：软硬融合 + 防环束搜索
-│   ├── 5_evaluate_legality.py       评估：SL / LR / EPR / AL
-│   ├── 6-10 + 两个新基线.py          对照实验（KGR / RL / CoT / A* / GRU）
-│   ├── *消融实验.py                  束宽与重复惩罚的取值依据
-│   └── kg_transition_cache.json      约束查找表（约 9 MB，可重建）
-│
-├── 3_dual_state/             阶段三：双态执行与动态演化
-│   ├── 1-6.*.py              从环境、模拟器、画像到批量实验
-│   ├── 7_dual_state_extended_experiments.py   补充实验（含消融与统计检验）
-│   ├── 8_dynamic_path_evolution.py            ★ 滚动重规划主实验（DTE-RR）
-│   ├── 9-12_*.py             多种子稳健性、路径来源敏感性
-│   ├── 13_export_subject_tasks.py            五学科任务包导出
-│   ├── 10_export_platform_data.py            为平台导出 JSON
-│   └── *_outputs/            ★ 已跑好的实验结果（CSV / JSON / PNG）
-│
-├── platform/                 可视化演示平台（纯静态 + stdlib 服务）
-│   ├── index.html            单页应用，六个页签
-│   ├── server.py             本地 HTTP 服务，零第三方依赖
-│   ├── assets/               app.js / engine.js / app.css / echarts.min.js
-│   └── data/                 graph / task / subjects / trajectories / aggregate
-│
-├── scripts/
-│   └── download_mt5.py       下载基座模型 google/mt5-small
-│
-└── data/                     外部数据放置目录（内容不随仓库分发）
-    ├── README.md             数据从哪来、放哪里
-    └── MOOCCube/relations/
-        └── prerequisite-dependency.json   先修关系表，55 KB，随仓库提供，
-                                           使第 3 阶段无需下载全量数据集
+│   └── database/                         由 MOOCCube 转出的 18 张表（约 13 MB）
+│       ├── concept.csv
+│       ├── course.csv
+│       ├── video.csv
+│       ├── paper.csv
+│       ├── teacher.csv
+│       ├── school.csv
+│       ├── user.csv
+│       ├── rel_prerequisite_dependency.csv
+│       ├── rel_course_concept.csv
+│       ├── rel_course_video.csv
+│       ├── rel_video_concept.csv
+│       ├── rel_concept_paper.csv
+│       ├── rel_field_concept.csv
+│       ├── rel_school_course.csv
+│       ├── rel_school_teacher.csv
+│       ├── rel_teacher_course.csv
+│       ├── rel_user_course.csv
+│       └── rel_user_video.csv
+├── 2_generation/                         阶段二：路径生成（软/硬约束解码、基线、消融、结果）
+│   ├── 0.数据集转知识图谱.py
+│   ├── 0.TSV文件导入关系.py
+│   ├── 0.补充先修关系.py
+│   ├── 0_delete_relations.cypher
+│   ├── 1_build_kg_cache.py               ★ 导出约束查找表（Neo4j → 本地）
+│   ├── 2_soft_constraint_rag.py
+│   ├── 3_hard_constraint_decoding.py     ★ 硬约束：Trie + logits 掩码
+│   ├── 4_fusion_generation.py            ★ 本文方法：软硬融合 + 防环束搜索
+│   ├── 4.融合_提示词多问题.py
+│   ├── 4_fusion_generation_差异化画像对比试验.py
+│   ├── 5_evaluate_legality.py            ★ 指标：SL / LR / EPR / AL
+│   ├── 6_单门课适用实验.py
+│   ├── 7_单门课三组对比试验.py
+│   ├── 8_对比KGR (基于图的传统推荐).py
+│   ├── 9_对比“基于强化学习的路径推荐”.py
+│   ├── 10_对比“纯 Prompt Engineering (CoT  Few-shot)”.py
+│   ├── 两个新基线.py
+│   ├── 束搜索宽度（Beam Size）进行消融实验.py
+│   ├── 防环惩罚系数消融.py
+│   ├── kg_transition_cache.json          约束表 8.9 MB，可重建
+│   ├── generated_results_soft.txt
+│   ├── generated_results_hard.txt
+│   ├── generated_results_fusion.txt
+│   ├── generated_results_fusion_final.txt
+│   ├── generated_results_single_course.txt
+│   ├── beam_size_ablation_results.csv
+│   ├── repetition_penalty_ablation_results.csv
+│   └── baseline_astar_grurnn_results.csv
+├── 3_dual_state/                         阶段三：双态执行与动态演化
+│   ├── 1.构建目标导向的环境与图谱.py
+│   ├── 2.构建高保真用户模拟器.py
+│   ├── 3.构建智能体与动态画像.py
+│   ├── 4.极速生成路径-多交互主实验.py
+│   ├── 5.双版本主实验.py
+│   ├── 6.批量多学生实验.py
+│   ├── 7_dual_state_extended_experiments.py
+│   ├── 8_dynamic_path_evolution.py       ★ 滚动重规划主实验（DTE-RR，D1–D6）
+│   ├── 9_dynamic_multiseed.py            十种子稳健性（复用 8 号脚本）
+│   ├── 10_export_platform_data.py        为平台导出 JSON
+│   ├── 11_path_source_sensitivity.py
+│   ├── 12_multiseed_robustness.py
+│   ├── 13_export_subject_tasks.py        五学科任务包导出
+│   ├── kg_transition_cache1.json         阶段三用邻接表 8.4 MB（410 概念子图）
+│   ├── README_dynamic_experiments.md     D1–D6 设计说明
+│   ├── README_补充实验_中期.md           中期补充实验说明
+│   ├── paper_revision/                   论文修订辅助（依赖外部 _docx_kit，可读不跑）
+│   │   ├── patch_cn_paper.py
+│   │   └── patch_en_paper.py
+│   ├── dual_state_outputs/               7 号脚本输出：9 个文件
+│   │   ├── experiment_summary.json
+│   │   ├── main_experiment_per_seed.csv
+│   │   ├── ablation_per_seed.csv
+│   │   ├── cohort_per_seed.csv
+│   │   ├── sensitivity_per_seed.csv
+│   │   ├── statistical_tests.csv
+│   │   ├── figure1_dual_state_framework.png
+│   │   ├── figure2_main_outcomes.png
+│   │   └── figure3_video_sensitivity.png
+│   ├── dynamic_outputs/                  8、9 号脚本输出：10 个文件
+│   │   ├── meta.json                     种子、耗时、图规模、全部超参
+│   │   ├── d1_main.json
+│   │   ├── d1_main.csv
+│   │   ├── d2_heterogeneity.json
+│   │   ├── d3_frequency.json
+│   │   ├── d4_lag_prior.json
+│   │   ├── d5_budget.json
+│   │   ├── d6_shock.json
+│   │   ├── m1_multiseed.json
+│   │   └── m1_multiseed.csv
+│   └── thesis_outputs/                   11、12 号脚本输出：3 个文件
+│       ├── multiseed_robustness.json
+│       ├── path_source_sensitivity.json
+│       └── path_source_sensitivity.csv
+├── platform/                             离线演示平台（纯静态 + 标准库服务）
+│   ├── index.html                        单页应用，六个页签
+│   ├── server.py                         本地服务，零第三方依赖
+│   ├── 启动平台.bat                      Windows 一键启动
+│   ├── README.md
+│   ├── assets/                           前端资源
+│   │   ├── app.js
+│   │   ├── engine.js                     ★ JS 版仿真引擎（双轨回放）
+│   │   ├── app.css
+│   │   └── echarts.min.js
+│   └── data/                             平台数据（由 10、13 号脚本导出）
+│       ├── graph.json                    410 概念 / 905 边
+│       ├── task.json
+│       ├── subjects.json
+│       ├── trajectories.json
+│       └── aggregate.json
+└── scripts/                              辅助脚本
+    └── download_mt5.py                   下载基座模型 google/mt5-small
 ```
 
-`docs/FILE_INDEX.md` 里有逐文件的中英文说明，包括每个脚本的输入、输出与对应论文章节。
+上面的树是**全量清单**——仓库 119 个文件一个未省略。每个文件做什么、吃什么、吐什么，见 `docs/FILE_INDEX.md`（中英对照，含 18 张数据表逐表说明与 22 个结果文件逐文件说明）。增删文件后可运行 `python docs/check_file_index.py` 自检是否有文件漏写。
 
 ---
 

@@ -18,21 +18,23 @@ A from-scratch walkthrough to publish this repository on GitHub, with copy-paste
 https://github.com/<你的用户名>/moocube-lpr
 ├── README.md            首页会自动渲染，中文
 ├── README_EN.md         英文版
-├── LICENSE              MIT
+├── LICENSE              MIT（代码）+ CC0（数据）
+├── CITATION.cff         引用元数据
 ├── requirements.txt
 ├── docs/
-│   ├── FILE_INDEX.md    逐文件说明（中英对照）
+│   ├── FILE_INDEX.md    119 个文件逐个说明（中英对照）
 │   ├── DATA.md          数据获取
-│   └── UPLOAD_GUIDE.md  本文件
-├── 1_prototype/         阶段一代码 + 14 MB CSV
+│   ├── UPLOAD_GUIDE.md  本文件
+│   └── check_file_index.py  文件说明自检
+├── 1_prototype/         阶段一代码 + 13 MB CSV
 ├── 2_generation/        阶段二代码 + 结果 + 9 MB 缓存
 ├── 3_dual_state/        阶段三代码 + 结果
 ├── platform/            演示平台（克隆即可跑）
-├── scripts/
-└── data/README.md       数据落位说明（不含数据本体）
+├── scripts/             模型下载脚本
+└── data/                先修表 55 KB + 落位说明
 ```
 
-总体积约 **36 MB**，118 个文件，全部在 GitHub 限制之内。
+总体积约 **36 MB**，119 个文件，全部在 GitHub 限制之内。
 
 ---
 
@@ -141,7 +143,7 @@ git ls-files | wc -l
 
 检查列表里**不该出现**：`.venv/`、`__pycache__/`、`models/` 以及 `data/MOOCCube/` 下除 `relations/prerequisite-dependency.json` 之外的任何文件。如果出现了，说明 `.gitignore` 没生效，先停下排查。
 
-预期 **118 个文件**，其中 115 个是代码、文档与结果，另外 3 个是 `m1_multiseed` 的两个产物和随仓库附带的先修关系表。
+预期 **119 个文件**，其中 116 个是代码、文档与结果，另外 3 个是 `m1_multiseed` 的两个产物和随仓库附带的先修关系表。
 
 ---
 
@@ -386,6 +388,7 @@ git commit -m "重新提交，排除大文件"
 - [ ] 仓库是 **Public**
 - [ ] 首页 README 正常渲染，中英文链接可跳转
 - [ ] `docs/FILE_INDEX.md` 能打开，表格不错行
+- [ ] 文件说明没有遗漏：`python docs/check_file_index.py` 输出「全部 N 个文件均已说明」且退出码为 0
 - [ ] 仓库体积 < 100 MB（首页右侧或 Settings 里可看）
 - [ ] **没有** `models/`、`data/MOOCCube/`、`.venv/` 目录
 - [ ] 全部 `.py` 文件里搜不到任何硬编码口令（`NEO4J_PASSWORD` 只应出现在 `os.environ.get` 里）
