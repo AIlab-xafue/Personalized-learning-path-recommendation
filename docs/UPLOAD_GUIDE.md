@@ -32,7 +32,7 @@ https://github.com/<你的用户名>/moocube-lpr
 └── data/README.md       数据落位说明（不含数据本体）
 ```
 
-总体积约 **36 MB**，104 个文件，全部在 GitHub 限制之内。
+总体积约 **36 MB**，118 个文件，全部在 GitHub 限制之内。
 
 ---
 
@@ -121,23 +121,27 @@ grep -rn "<你的旧密码>" .
 
 > 这一步很重要。Git 的历史是永久的，密码一旦 push 上去，即使后来删掉文件，历史记录里依然能翻出来，只能靠重写历史或删库重建。
 
-### 3.3 看一眼将被提交的文件清单
+### 3.3 确认本地仓库状态
+
+本地仓库**已经初始化并完成首次提交**（共两次提交：初始提交 + 一次修复提交），所以不需要再执行 `git init`。确认一下：
 
 ```bash
-git init -b main
-git add -A
-git status --short | head -30
+git log --oneline
+git status --short
 ```
 
-检查列表里**不该出现**：`.venv/`、`__pycache__/`、`models/`、`data/MOOCCube/`。如果出现了，说明 `.gitignore` 没生效，先停下排查。
+**预期**：`git log` 输出两行提交记录；`git status` **没有任何输出**（工作区干净）。
 
-统计一下将被提交的文件数：
+再看一眼被跟踪的文件清单，确认没有混入不该进仓库的东西：
 
 ```bash
-git status --short | wc -l
+git ls-files | head -30
+git ls-files | wc -l
 ```
 
-预期 **105 左右**（104 个文件 + 1 个 `.gitignore`）。
+检查列表里**不该出现**：`.venv/`、`__pycache__/`、`models/` 以及 `data/MOOCCube/` 下除 `relations/prerequisite-dependency.json` 之外的任何文件。如果出现了，说明 `.gitignore` 没生效，先停下排查。
+
+预期 **118 个文件**，其中 115 个是代码、文档与结果，另外 3 个是 `m1_multiseed` 的两个产物和随仓库附带的先修关系表。
 
 ---
 
@@ -222,7 +226,9 @@ ssh -T git@github.com
 
 ---
 
-## 6. 第五步：提交并推送
+## 6. 第五步：添加远程地址并推送
+
+提交已经在本地做好了，这一步只需要接上远程仓库再推上去。
 
 ```bash
 cd "D:/workbuddy工作空间/github_release/moocube-lpr"
@@ -233,25 +239,24 @@ git remote add origin https://github.com/<你的用户名>/moocube-lpr.git
 # 2. 确认远程地址没写错
 git remote -v
 
-# 3. 提交
-git commit -m "Initial commit: code, docs and experiment outputs for KG-constrained learning path recommendation"
-
-# 4. 推送
+# 3. 推送（-u 表示把本地 main 与远程 main 绑定，以后直接 git push 即可）
 git push -u origin main
 ```
+
+> 如果你的默认分支名不是 `main`（用 `git branch --show-current` 可查），把上面命令里的 `main` 换成实际分支名。
 
 **预期输出**：
 
 ```
-Enumerating objects: 110, done.
-Counting objects: 100% (110/110), done.
+Enumerating objects: 130, done.
+Counting objects: 100% (130/130), done.
 ...
 To https://github.com/<用户名>/moocube-lpr.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 ```
 
-**推送体积约 36 MB**，视网速需要几十秒到几分钟。如果卡住超过 5 分钟且无进度，按 `Ctrl+C` 中断，改用方案 B 的 token 重试（常见原因是认证方式没配对）。
+**推送体积约 36 MB**，视网速需要几十秒到几分钟。如果卡住超过 5 分钟且无进度，按 `Ctrl+C` 中断，改用第 5 步方案 B 的 token 重试（常见原因是认证方式没配对）。
 
 推送完成后刷新 GitHub 页面，应该能看到 README 渲染出来的中文首页。
 

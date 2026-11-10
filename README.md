@@ -126,7 +126,10 @@ moocube-lpr/
 │   └── download_mt5.py       下载基座模型 google/mt5-small
 │
 └── data/                     外部数据放置目录（内容不随仓库分发）
-    └── README.md             数据从哪来、放哪里
+    ├── README.md             数据从哪来、放哪里
+    └── MOOCCube/relations/
+        └── prerequisite-dependency.json   先修关系表，55 KB，随仓库提供，
+                                           使第 3 阶段无需下载全量数据集
 ```
 
 `docs/FILE_INDEX.md` 里有逐文件的中英文说明，包括每个脚本的输入、输出与对应论文章节。

@@ -152,7 +152,10 @@ moocube-lpr/
 │   └── download_mt5.py       Fetch the google/mt5-small base model
 │
 └── data/                     External data goes here (contents not distributed)
-    └── README.md             Where the data comes from and where to put it
+    ├── README.md             Where the data comes from and where to put it
+    └── MOOCCube/relations/
+        └── prerequisite-dependency.json   Prerequisite table, 55 KB, bundled
+                                           so Stage 3 needs no full dataset
 ```
 
 See `docs/FILE_INDEX.md` for a per-file description with inputs, outputs, and
